@@ -75,6 +75,8 @@ $index = true;
 ;(function(alias){
 "use strict";
 var toggleButton = {
+
+  color:["white", "rgb(77, 77, 77)"],
   status: false,
   selectdiv:"",
   sidebar: function() {
@@ -82,12 +84,34 @@ var toggleButton = {
       return this.selectdiv;
   },
   clickButton: function() {
+    var spanTop = document.querySelector("#rotatespantop");
+    var spanBottom = document.querySelector("#rotatespanbottom");
+    var spantoHide = document.querySelector("#hidespan");
+    var spanMenu = document.querySelectorAll("#active_menu span");
+    var iconMenu = document.querySelector("#active_menu");
     this.sidebar();
     if (this.status === false){
-      this.selectdiv.style.marginLeft = "-342px";
+      this.selectdiv.style.marginLeft = "-100%";
+      spantoHide.style.display = "block";
+      spanTop.style.transform = "rotate(0deg)";
+      spanBottom.style.transform = "rotate(0deg)";
+      spanBottom.style.marginTop = "0px";
+      for (var i = 0; i < spanMenu.length; i++) {
+        var el = spanMenu[i];
+        el.style.backgroundColor = this.color[1];
+      }
         return this.status = true;
     } if (this.status === true) {
-      this.selectdiv.style.marginLeft = "0px";
+      this.selectdiv.style.marginLeft = "0";
+      spantoHide.style.display = "none";
+      for (var i = 0; i < spanMenu.length; i++) {
+        var el = spanMenu[i];
+        el.style.backgroundColor = this.color[0];
+      }
+      spanTop.style.transform = "rotate(45deg)";
+      spanBottom.style.transform = "rotate(-45deg)";
+      spanBottom.style.marginTop = "-8px";
+
       return this.status = false;
     }
   }

@@ -35,11 +35,11 @@
 		</div>
 
 	</div>
-	<div id="active_menu">
+	<div id="active_menu" >
 		<a>
-			<span></span>
-			<span></span>
-			<span></span>
+			<span id="rotatespantop"></span>
+			<span id="hidespan"></span>
+			<span id="rotatespanbottom"></span>
 		</a>
 	</div>
 	<div class="topbar">
