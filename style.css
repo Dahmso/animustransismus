@@ -1,0 +1,279 @@
+/* modification for prism.css */
+
+code[class*="language-"], pre[class*="language-"] {
+    tab-size: 1;
+}
+
+
+/* end modification for prism.css */
+body {
+  margin: 0;
+  padding: 0;
+}
+.sidebar {
+  /*margin-top: 79px;*/
+}
+.clouds-wrapper, .content_mountains, .moon {
+  /*display: none;*/
+}
+.content_header {
+  display: none;
+}
+
+.page {
+  display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.pageanimtransitransfo {
+  width: 100%;
+  background-color: rgba(128, 128, 128,0.2);
+  padding: 50px;
+  animation-name: jump;
+  animation-duration: 3s;
+  z-index: 11;
+  margin: 10 10 0 10;
+
+}
+
+
+.page .animation, .page .transition, .page .transformation {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 250px;
+    color: white;
+    height: 250px;
+    border-radius: 250px;
+
+}
+
+.page .animation, .page .transition, .page .transformation {
+    background-color: orangered;
+    color: white;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    z-index: 1;
+}
+.tutolink {
+  width: 100%;
+  display: inline-block;
+  float: left;
+  transition: all 0.2s ease-in-out;
+}
+.tutolink:hover {
+  box-shadow: 0 0 20px 0 rgba(0,0,0,.2),0 5px 5px 0 rgba(0,0,0,.24);
+  transform: translate(-2px,2px);
+}
+.tuto {
+  text-align:center;
+  background-color: #129D86;
+  height: 51%;
+}
+.grandediv {
+width: 100%;
+height: 600px;
+padding: 10px;
+position: relative;
+display: inline-block;
+overflow: hidden;
+
+}
+.deuxpetitesdiv {
+  width: 60%;
+  height: 100%;
+  padding-left: 10px;
+  display: inline-block;
+
+}
+.tuto h2 {
+  line-height: 300px;
+  color: white;
+  font-size: 6em;
+  margin: 0;
+  font-family: 'Monoton', cursive;
+  font-weight: 100;
+}
+
+.page .animation:before, .page .transition:before, .page .transformation:before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 4px;
+    bottom: 40%;
+    left: 30%;
+    background-color: white;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.page .animation:hover:before, .page .transition:hover:before, .page .transformation:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.page .animation:hover, .page .transition:hover, .page .transformation:hover  {
+    z-index: 2;
+}
+
+.transition h1, .transformation h1, .animation h1 {
+  font-size: 1.6em;
+  line-height: 250px;
+  margin: 0;
+  padding: 0;
+}
+
+.ball {
+    top: 35%;
+    animation-direction:alternate-reverse;
+    border-radius: 6px;
+    animation-duration: 60s;
+    position: absolute;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: -1;
+}
+.cercle1 {
+  display: inline-block;
+
+}
+.cercle {
+  display: inline-block;
+  margin-left: 10vw;
+}
+
+.pagevivezlexperience {
+  width: 40%;
+  height:600px;
+  background-color: rgb(0, 139, 139);
+  animation-name: jump;
+  animation-duration: 4s;
+  display: inline-block;
+  float: left;
+}
+.atelier {
+  margin: auto;
+  margin-top: 20vh;
+}
+ .atelier .title {
+      margin: auto;
+      display: block;
+      color: white;
+      font-size: 2em;
+      vertical-align: center;
+      margin-bottom: 2%;
+      margin-top: 29vh;
+      padding: 5% 0% 0% 0%;
+      z-index: 1;
+
+    }
+.pagevivezlexperience .atelier a {
+  margin: auto;
+  display: block;
+  background-color: none;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+  width: 200px;
+  text-align: center;
+  transition: all 0.3s linear;
+  z-index: 1;
+}
+.atelier a:hover {
+  background-color: white;
+  color: darkcyan;
+  width: 300px;
+}
+.referencediv {
+  display: inline-block;
+  float: left;
+  color: white;
+  height: 50.5%;
+  width: 100%;
+  margin-top: 10px;
+  background-color: orangered;
+  transition: all 0.2s ease-in-out;
+
+}
+.referencediv h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 4em;
+  line-height: 300px;
+  font-weight: 100;
+  font-family: 'Plaster', cursive;
+}
+
+.referencediv:hover {
+  box-shadow: 0 0 20px 0 rgba(0,0,0,.2),0 5px 5px 0 rgba(0,0,0,.24);
+  transform: translate(-2px,-2px);
+}
+
+
+@media (max-width: 1078px) {
+  .cercle,.cercle1 {
+    margin-left: 5vw;;
+  }
+}
+
+@media (max-width: 1016px) {
+ .cercle,.cercle1 {
+   margin-left: 2vw;
+   margin-bottom: 2vw;
+ }
+}
+@media (max-width: 918px) {
+ .cercle,.cercle1 {
+   margin-left: 0;
+   margin-bottom: 0;
+ }
+
+.page .animation, .page .transition, .page .transformation {
+    width: 200px;
+    height: 200px;
+
+}
+.page .animation h1, .page .transition h1, .page .transformation h1{
+line-height: 200px;
+}
+}
+
+@media (max-width: 713px) {
+  .page .animation, .page .transition, .page .transformation {
+      width: 150px;
+      height: 150px;
+
+  }
+  .atelier {
+    margin:0;
+    font-size: 1.5em;
+  }
+
+  .page .animation h1, .page .transition h1, .page .transformation h1{
+    font-size: 1.2rem;
+    line-height: 150px;
+  }
+
+
+  .pagevivezlexperience .atelier  a {
+    width: auto;
+  }
+  .logo {
+    margin-top: 4em;
+    margin-bottom: 4em;
+  }
+}
+@media (max-width: 563px) {
+  .cercle,.cercle1 {
+    display: block;
+  }
+
+}

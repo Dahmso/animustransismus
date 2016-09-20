@@ -1,0 +1,82 @@
+/* modification for acestart.css */
+.ace_editor.fullScreen {
+top: 80px;
+}
+/* end modification for acestart.css */
+
+
+
+
+body {
+	font-family: 'Lato', sans-serif;
+	margin: 0px;
+	position: relative;
+}
+img {
+	width: 80%;
+	height: auto;
+}
+
+::selection {
+  background: #ffdfa5;
+}
+
+.page {
+	margin: auto;
+	padding: 0px 0px;
+}
+
+/*
+hr .shadow abs-top
+*/
+
+section, section h2, section .text {
+	transition: all 0.2s linear;
+}
+section {
+	position: relative;
+	margin: auto;
+	background: white;
+	padding: 15px 0px;
+	transition: all 0.3s ease-out;
+	overflow: hidden;
+	text-shadow: 0 0 0.1px #636363;
+	cursor: hand;
+	border-top: 1px solid #b3d1ff;
+}
+
+
+shadow {
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	background: rgba(0, 0, 0, 0);;
+	height: 5px;
+	-webkit-filter: blur(9px);
+	display: block;
+	transition: all 0.3s ease-out;
+}
+section:hover shadow {
+	background: rgba(0, 0, 0, 1);
+}
+shadow[class="abs-top"] { top: -4px; }
+shadow[class="abs-bottom"] { bottom: -4px }
+
+section h2 {
+	font-size: 2em;
+	text-align: center;
+}
+section .col-6 {
+	vertical-align: middle;
+    display: inline-block;
+    width: 45vw;
+    padding: 25px;
+}
+
+section .text {
+	font-size: 1.3em;
+	padding-left: 10vw;
+   }
+section .exemple {
+
+}

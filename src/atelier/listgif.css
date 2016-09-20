@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+
+}
+#listgif {
+  width: 50vw;
+  height: auto;
+  border: 4px solid black;
+  margin: auto;
+
+}
+h5 {
+  width: 50vw;
+  text-align: center;
+  margin-bottom: 5vw;
+}
+.aligncenter {
+  margin: auto;
+}
+
+.block {
+  margin-left: 25%;
+  margin-bottom: 100px;
+  padding: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(238, 242, 243);
+  border-bottom: 4px solid red;
+  border-right: 4px solid blue;
+  border-left: 4px solid yellow;
+  border-top: 4px solid green;
+  animation-duration: 4000ms; /* durée annimation en milliseconde */
+  animation-timing-function: linear;/* courbe de vitesse animation notamment entre les differentes phases. */
+  animation-iteration-count: infinite; /* defini le nombre de fois qu'on applique l'animation à l'objet*/
+}
+#giftranslatex {
+  animation-name:translatex;   /* on annonce le nom animation defini dans le keyframes */
+}
+@keyframes translatex {
+  0% /* etape de l'animation */
+ {
+   transform: translateX(0vw);
+  }
+  25%
+ {
+   transform: translateX(10vw);
+  }
+  50%
+ {
+   transform: translateX(20vw);
+  }
+  75%
+ {
+   transform: translateX(10vw);
+  }
+  100%
+ {
+   transform: translateX(0vw);
+  }
+}
+
+#giftranslatexandrotate {
+  animation-name:translateandrotate;
+}
+@keyframes translateandrotate { /* ATTENTON QUAND ON FAIT UNE ANIMATION TOUJOURS SE BASER SUR LA POSITION INITIAL */
+  0%
+ {
+   transform: translateX(0px);
+  }
+  25%
+ {
+   transform: translateX(120px) rotate(90deg);
+  }
+  50%
+ {
+   transform: translateX(240px) rotate(180deg); /*il ne fait pas vraiment un 180° à ce moment la, il se base juste de la position initiale malgré la position de l'animation precedente. */
+  }
+  75%
+ {
+   transform: translateX(120px) rotate(90deg) ;
+  }
+  100%
+ {
+   transform: translateX(0px); /* n'oublie pas de revenir à votre position initiale pour une animation fluide et ne pas avoir un retour brusque*/
+  }
+}
+#giftranslaterotatexy {
+  animation-name:translateandrotatexy;
+}
+@keyframes translateandrotatexy {
+  0%
+ {
+   transform: translateX(0px);
+  }
+  25%
+ {
+   transform: translateX(120px) translateY(80px) rotate(90deg);
+  }
+  50%
+ {
+   transform: translateX(240px)rotate(-180deg); /*leurs montré un graph comment fonctionne rotate et X/Y*/
+  }
+  75%
+ {
+   transform: translateX(120px) translateY(80px) rotate(90deg);
+  }
+  100%
+ {
+   transform: translateX(0px);
+  }
+}
+
+#giftranslatenewprop {
+  animation-name:translatenewprop;
+}
+@keyframes translatenewprop {
+  0% /* etape de l'animation */
+ {
+   transform: translateX(0px);
+   background-color: rgba(220, 76, 65, 1);
+  }
+  25%
+ {
+   transform: translateX(120px) scale(1.5) ;
+   background-color: rgba(220, 76, 65, 1);/* à mettre apres transform, l'animation */
+   border-radius: 80px;
+  }
+  50%
+ {
+   transform: translateX(240px) scale(1.1);
+   background-color: rgba(26, 161, 95, 1);
+   border-radius: 0px;
+  }
+  75%
+ {
+   transform: translateX(120px) scale(1.5);
+   background-color: rgb(255, 206, 69);
+   border-radius: 80px;
+  }
+  100%
+ {
+   transform: translateX(0px);
+   background-color: rgba(220, 76, 65, 1)
+  }
+}
+#gifinnercircle {
+  animation-name:innercircle;
+  border-radius: 80px;
+  animation-duration: 2s;
+  margin-top: 200px;
+}
+@keyframes innercircle {
+    from /*équivalent à 0% */
+      {
+       transform:rotate(0deg);
+      }
+    to /* équivalent à 100% */
+      {
+       transform:rotate(-360deg);
+      }
+}
+
+
+
+/*
+ *  JE ME SUIS ARRETER ICI
+ *  CELLE DU BAS N'ONT PAS ETE INCLUSE
+ */
+
+
+
+
+
+#rotationdiv {
+  animation-name: circle;
+  animation-duration: 4000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes circle {
+    from
+    {
+      transform:rotate(0deg);
+    }
+    to
+    {
+      transform:rotate(360deg);
+    }
+}
