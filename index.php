@@ -174,14 +174,16 @@ function changeUrl(title, url) {
     }
 }
 function verifPage(){
-	var frame = document.getElementById('frame'),
-		init = frame.getAttribute('data-init'),
-		url = window.location.pathname.replace('/', "");
+	var frame = document.getElementById('frame');
+	var init = frame.getAttribute('data-init');
+	var url = window.location.pathname;
+		url = url.split('/');
+		url = url[3];
 	if (init == url) {
-		// console.log('verifPage()', init + ' = ' + url)
+		console.log('verifPage()', init + ' = ' + url)
 		return;
 	} else {
-		// console.log('verifPage()', init + ' =/= ' + url)
+		console.log('verifPage()', init + ' =/= ' + url)
 		if (url.length === 0) {
 			changePage('accueil');
 		} else {
@@ -228,15 +230,15 @@ var CheminComplet	= document.location.href;
 var NomDuFichier	= CheminComplet.substring(CheminComplet.lastIndexOf( "/" )+1 );
 var urlOnLoad 			= NomDuFichier.replace('?page=', "");
 //console.log(urlOnLoad)
-setInterval(verifPage, 5000)
+//setInterval(verifPage, 5000)
 
 window.onload=function()
 {
 	$('#contenu').load('page-accueil.php');
 	changePage(urlOnLoad, true);
 
-/*	setTimeout(function(){
-		var anchors = document.querySelectorAll('a');
+	setTimeout(function(){
+		var anchors = document.querySelectorAll('.leftbar a');
 		console.log(anchors);
 		for (var i = 0; i < anchors.length - 1; i++) {
 			if (i !== 7) { // 7 est la balise 'a' qui sert a afficher la sidebar
@@ -245,15 +247,15 @@ window.onload=function()
 					var target = e.toElement;
 					while (target.getAttribute('href') === null) {
 						target = target.parentNode;
-						//console.log(target.getAttribute('href'));
+						console.log('target attr = ', target.getAttribute('href'));
 					}
-					//console.log(target);
+					console.log('var target = ', target);
 					window.target = target.getAttribute('href');
 					changePage(target.getAttribute('href'));
 				});
 			}
 		}
-	}, 100)*/
+	}, 100)
 }
 
 
