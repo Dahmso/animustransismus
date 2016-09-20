@@ -9,24 +9,8 @@
     margin: auto;
     margin-top: 41px;
 }
-.content_header {
-  display: block;
-}
-.content_mountains {
-  margin-left: 19vw;
-}
-.moon {
-  display: none;
-}
-.clouds-wrapper {
-  display: none;
-}
-.mountains ul {
-  padding-left: none;
-}
-.page {
-  width: 80%;
-}
+
+
 
 .circle:hover {
     border-radius: 0;

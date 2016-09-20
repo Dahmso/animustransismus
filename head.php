@@ -1,4 +1,4 @@
-	<div class="sidebar"  id="slideleft">
+	<div class="sidebar">
 		<div class="leftbar">
 			<ul>
 				<a href="accueil/">
@@ -33,12 +33,10 @@
 				</a>
 			</ul>
 		</div>
-		<a href="#" class="leftbarmenuclose">
-			<h6>Fermer</h6>
-		</a>
+
 	</div>
 	<div id="active_menu">
-		<a href="#slideleft">
+		<a>
 			<span></span>
 			<span></span>
 			<span></span>

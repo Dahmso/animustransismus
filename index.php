@@ -1,4 +1,4 @@
-<?php 
+<?php
 $index = true;
  ?>
 
@@ -34,7 +34,7 @@ $index = true;
 			<h3 id="text"></h3>
 			<div class="afaire">
 				<img src="">
-			</div>	
+			</div>
 			<div id="btn-choice" class="btn-choice-lng sm">
 				<button id="btn-html" data-lng="html">HTML</button>
 				<button id="btn-css" data-lng="css" class="active">CSS</button>
@@ -61,9 +61,9 @@ $index = true;
 			</div>
 		</div>
 	</div>
-	
+
 	<?php include 'head.php' ?>
-	
+
 	<div id="main" style="position: relative;">
 		<div id="frame" data-init="null"></div>
 		<div id="contenu"></div>
@@ -74,13 +74,31 @@ $index = true;
 <script type="text/javascript">
 ;(function(alias){
 "use strict";
-
+var toggleButton = {
+  status: false,
+  selectdiv:"",
+  sidebar: function() {
+      this.selectdiv = document.querySelector(".sidebar");
+      return this.selectdiv;
+  },
+  clickButton: function() {
+    this.sidebar();
+    if (this.status === false){
+      this.selectdiv.style.marginLeft = "-342px";
+        return this.status = true;
+    } if (this.status === true) {
+      this.selectdiv.style.marginLeft = "0px";
+      return this.status = false;
+    }
+  }
+}
+document.querySelector("#active_menu").addEventListener("click", toggleButton.clickButton.bind(toggleButton));
 function changePage(param_url, param_load=null){
 	var urlInSearchBar = window.location.pathname.replace('/', '');
 	var $frame = $('#frame');
-	console.log('param_url : ', param_url);
+	// console.log('param_url : ', param_url);
 	var url = param_url.replace('/', '')
-	console.log('url : ', url)
+	// console.log('url : ', url)
 	if ( urlInSearchBar === url && param_load === null) { console.log('Equivalent : ', urlInSearchBar + ' = ' + url); return false}
 	switch(url){
 
@@ -119,7 +137,7 @@ function changePage(param_url, param_load=null){
 		break;
 
 		default:
-			console.log('Switch: Default ', url)
+			// console.log('Switch: Default ', url)
 	}
 }
 function changeUrl(title, url) {
@@ -136,10 +154,10 @@ function verifPage(){
 		init = frame.getAttribute('data-init'),
 		url = window.location.pathname.replace('/', "");
 	if (init == url) {
-		console.log('verifPage()', init + ' = ' + url)
+		// console.log('verifPage()', init + ' = ' + url)
 		return;
 	} else {
-		console.log('verifPage()', init + ' =/= ' + url)
+		// console.log('verifPage()', init + ' =/= ' + url)
 		if (url.length === 0) {
 			changePage('accueil');
 		} else {
@@ -181,7 +199,7 @@ function loader(sec){
 */
 
 loader('2')
-	
+
 var CheminComplet	= document.location.href;
 var NomDuFichier	= CheminComplet.substring(CheminComplet.lastIndexOf( "/" )+1 );
 var urlOnLoad 			= NomDuFichier.replace('?page=', "");
@@ -193,7 +211,7 @@ window.onload=function()
 	$('#contenu').load('page-accueil.php');
 	changePage(urlOnLoad, true);
 
-	setTimeout(function(){
+/*	setTimeout(function(){
 		var anchors = document.querySelectorAll('a');
 		console.log(anchors);
 		for (var i = 0; i < anchors.length - 1; i++) {
@@ -211,7 +229,7 @@ window.onload=function()
 				});
 			}
 		}
-	}, 100)
+	}, 100)*/
 }
 
 

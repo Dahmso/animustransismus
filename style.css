@@ -10,14 +10,8 @@ body {
   margin: 0;
   padding: 0;
 }
-.sidebar {
-  /*margin-top: 79px;*/
-}
-.clouds-wrapper, .content_mountains, .moon {
-  /*display: none;*/
-}
 .content_header {
-  display: none;
+  /*display: none;*/
 }
 
 .page {

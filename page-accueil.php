@@ -116,7 +116,6 @@ var CreateBalls = {
 		 }\n\
 	 }\n\
 	 ";
-	 //console.log(ballcss);
 	 styleDiv.innerHTML += ballcss;
  							 },
 	randomColor: function() {
@@ -134,11 +133,8 @@ var CreateBalls = {
 		this.obj.style.backgroundColor = this.pickColor;
 		container.appendChild(this.obj);
 			  }
-
-}
-
-for (var i = 0; i < 50; i++){
-CreateBalls.ball();
-
-};
-</script>
+		}
+		for (var i = 0; i < 50; i++){
+			CreateBalls.ball();
+		};
+		</script>
