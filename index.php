@@ -200,7 +200,7 @@ function verifPage(){
 	var init = frame.getAttribute('data-init');
 	var url = window.location.pathname;
 		url = url.split('/');
-		url = url[3];
+		url = url[url.length - 1];
 	if (init == url) {
 		//console.log('verifPage()', init + ' = ' + url)
 		return;
