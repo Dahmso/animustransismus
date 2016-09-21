@@ -77,7 +77,7 @@ $index = true;
 var toggleButton = {
 
   color:["white", "rgb(77, 77, 77)"],
-  status: false,
+  status: true,
   selectdiv:"",
   sidebar: function() {
       this.selectdiv = document.querySelector(".sidebar");
@@ -173,28 +173,54 @@ function changePage(param_url, param_load=null){
 			$frame.fadeIn();
 			$('#contenu').fadeOut();
 			changeUrl(url.toUpperCase(), url)
+      displayContentHeader("annexe");
 		break;
 
 		default:
 			// console.log('Switch: Default ', url)
 	}
 }
-function displayContentHeader() {
+function displayContentHeader(elem) {
+  var screenWidth = window.innerWidth;
   var contentHeader = document.querySelector('.content_header');
   var moon = document.querySelector('.moon');
   var cloudsWrapper = document.querySelector('.clouds-wrapper');
   var contentMountains = document.querySelector('.content_mountains');
-  if ("accueil") {
+  if (screenWidth <= 700) {
   contentHeader.style.display = "none";
-  } if ("atelier") {
-    contentHeader.style.display = "block";
-    } if ("animation") {
+  } else {
+  if (elem === "accueil" || elem === "annexe") {
+  contentHeader.style.display = "none";
+  }
+  if (elem === "atelier") {
+    contentHeader.style.display = "none";
+    setTimeout(function(){
       contentHeader.style.display = "block";
-      } if ("transition") {
-        contentHeader.style.display = "block";
-      } if ("annexe") {
-        contentHeader.style.display = "block";
-          }
+      moon.style.display = "block";
+      contentMountains.style.display = "block";
+      cloudsWrapper.style.display = "block";
+    }, 500);
+  }
+  if (elem === "animation") {
+    contentHeader.style.display = "none";
+    setTimeout(function(){
+    contentHeader.style.display = "block";
+    contentHeader.style.height = "20vh";
+    moon.style.display = "block";
+    contentMountains.style.display = "block";
+  }, 500);
+
+  }
+  if (elem === "transition") {
+    contentHeader.style.display = "none";
+    setTimeout(function(){
+    contentHeader.style.display = "block";
+    moon.style.display = "none";
+    contentMountains.style.display = "block";
+    cloudsWrapper.style.display = "none";
+  }, 500);
+  }
+}
 }
 function changeUrl(title, url) {
     if (typeof (history.pushState) != "undefined") {
