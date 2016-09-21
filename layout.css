@@ -530,7 +530,7 @@ z-index: 11;
 		display: inline-block;
 		vertical-align: middle;
     position: fixed;
-    z-index: 20;
+    z-index: 27;
     margin: 10px;
 
 }
@@ -572,7 +572,7 @@ z-index: 11;
 }
 
 .sidebar {
-	z-index: 19;
+	z-index: 26;
   width: 100%;
 	position: fixed;
   height: 100%;
