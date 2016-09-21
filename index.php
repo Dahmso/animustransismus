@@ -292,31 +292,6 @@ function Anchor(){
 	}
 }
 
-/*
-	function findPos(obj){
-	    var curleft = curtop = 0;
-	    if (obj.offsetParent) {
-	        curleft = obj.offsetLeft
-	        curtop = obj.offsetTop
-	        while (obj = obj.offsetParent) {
-	            curleft += obj.offsetLeft
-	            curtop += obj.offsetTop
-	        }
-	    }
-	    return [curtop, curleft];
-	}
-	function createFrame(posTop, postLeft){
-		var frame = document.createElement("div");
-		var avant = document.getElementById("load");
-			document.body.insertBefore(frame, avant);
-			frame.setAttribute('id', 'frame');
-			frame.style.display = 'block';
-			frame.style.opacity = '0,5';
-			frame.style.top = posTop + 'px';
-			frame.style.left = postLeft + 'px';
-	}
-*/
-
 loader('2')
 
 var CheminComplet	= document.location.href;
