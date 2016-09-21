@@ -305,6 +305,8 @@ window.onload=function()
 		var anchors = new Anchor();
 		anchors.setAnchor(document.querySelectorAll('.leftbar a'));
 		anchors.setAnchor(document.querySelectorAll('.listbar a'));
+		anchors.setAnchor(document.querySelectorAll('.row_circle a'));
+		anchors.setAnchor(document.querySelectorAll('.section a'));
 		var allAnchors = anchors.getAnchors();
 		console.log(allAnchors);
 		for (var i = 0; i < allAnchors.length; i++) {
