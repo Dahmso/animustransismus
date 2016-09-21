@@ -193,31 +193,28 @@ function displayContentHeader(elem) {
   contentHeader.style.display = "none";
   }
   if (elem === "atelier") {
-    contentHeader.style.display = "none";
     setTimeout(function(){
       contentHeader.style.display = "block";
-      moon.style.display = "block";
-      contentMountains.style.display = "block";
-      cloudsWrapper.style.display = "block";
+      moon.style.visibility = "visible";
+      contentMountains.style.visibility = "visible";
+      cloudsWrapper.style.visibility = "visible";
     }, 500);
   }
   if (elem === "animation") {
-    contentHeader.style.display = "none";
     setTimeout(function(){
     contentHeader.style.display = "block";
     contentHeader.style.height = "20vh";
-    moon.style.display = "block";
-    contentMountains.style.display = "block";
+    moon.style.visibility = "visible";
+    contentMountains.style.visibility = "visible";
   }, 500);
 
   }
   if (elem === "transition") {
-    contentHeader.style.display = "none";
     setTimeout(function(){
     contentHeader.style.display = "block";
-    moon.style.display = "none";
-    contentMountains.style.display = "block";
-    cloudsWrapper.style.display = "none";
+    moon.style.visibility = "hidden";
+    contentMountains.style.visibility = "visible";
+    cloudsWrapper.style.visibility = "hidden";
   }, 500);
   }
 }
