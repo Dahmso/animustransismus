@@ -2,11 +2,11 @@
 
 
 <div class="page">
-
+	<h1>Propriétés et conclusions</h1>
 	<div class="row">
 		<h1>Transition</h1>
 		<p>
-			Les transitions CSS permettent de créer des transitions harmonieuses entre les valeurs des propriétés CSS concernées. Elles permettent aussi de définir leur évolution (accélération/décélération), via les fonctions de minutage. 
+			Les transitions CSS permettent de créer des transitions harmonieuses entre les valeurs des propriétés CSS concernées. Elles permettent aussi de définir leur évolution (accélération/décélération), via les fonctions de minutage.
 		</p>
 		<h3>Propriétés :</h3>
 		<section data-toggle="false">
@@ -148,7 +148,7 @@
 					<h2>Valeurs Initiales</h2>
 					<p>
 					Valeur initiale	pour chaque propriété individuelle de la propriété raccourci :
-					</p>				
+					</p>
 					<pre class="language-css">
 						<code>transition-delay: 0s
 						transition-duration: 0s
