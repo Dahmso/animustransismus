@@ -2,11 +2,11 @@
 
 
 <div class="page">
-
+	<h1>Propriétés et conclusions</h1>
 	<div class="row">
 		<h1>Transition</h1>
 		<p>
-			Les transitions CSS permettent de créer des transitions harmonieuses entre les valeurs des propriétés CSS concernées. Elles permettent aussi de définir leur évolution (accélération/décélération), via les fonctions de minutage. 
+			Les transitions CSS permettent de créer des transitions harmonieuses entre les valeurs des propriétés CSS concernées. Elles permettent aussi de définir leur évolution (accélération/décélération), via les fonctions de minutage.
 		</p>
 		<h3>Propriétés :</h3>
 		<section data-toggle="false">
@@ -148,7 +148,7 @@
 					<h2>Valeurs Initiales</h2>
 					<p>
 					Valeur initiale	pour chaque propriété individuelle de la propriété raccourci :
-					</p>				
+					</p>
 					<pre class="language-css">
 						<code>transition-delay: 0s
 						transition-duration: 0s
@@ -366,6 +366,66 @@
 				<a href="https://developer.mozilla.org/fr/docs/Web/CSS/animation-direction" class="source">Source <i class="fa fa-link fa-1x" aria-hidden="true"></i></a>
 			</div>
 		</section>
+	</div>
+
+<!--conclusion-->
+
+	<div class="row">
+		<h1>Conclusions</h1>
+		<p>
+			CSS reste le moyen le plus commode et le plus rapide à mettre en oeuvre pour créer des animations simples.
+		</p>
+		<p>
+			CSS est une approche déclarative; on part d'un élément statique qui comporte certaines propriétés et on déclare un changement d'état. Il s'agit de transitions simples en "hover", "focus" ou autre, qui font apparaître ou disparaître un contenu ou le déplace.
+		</p>
+		<p>
+			Les keyframes apportent une précision sur les différents états des transformations à la manière d'un scénario.
+		</p>
+		<p>
+			Loin des fausses problématiques de poids des animations et de fluidité de ses "concurrents" <a href="https://css-tricks.com/myth-busting-css-animations-vs-javascript/" target="_blank" style="text-decoration : underline;">JavaScript en tête</a>, le CSS reste pourtant limité dans certains cas.
+		</p>
+		<p  style="text-align : left;">
+			<a href="https://css-tricks.com/comparison-animation-technologies/" target="_blank" class="source">Source <i class="fa fa-link fa-1x" aria-hidden="true"></i></a>
+		</p>
+
+		<h3>Limites du CSS :</h3>
+
+		<section data-toggle="false">
+			<h3 id="test" onclick="toggle(this)">Compatibilité<i class="fa fa-1x fa-chevron-right" aria-hidden="true"></i></h3>
+			<div class="contenu">
+				<p>
+					La compatibilité navigateur passe par la duplication et le préfixage des déclarations. L'exercice peut être simplifié avec la création de mixins SASS.
+				</p>
+
+			<a href="https://developer.mozilla.org/fr/docs/Glossaire/Pr%C3%A9fixe_Vendeur" class="source" target="_blank" >Source <i class="fa fa-link fa-1x" aria-hidden="true"></i></a>
+			</div>
+		</section>
+
+		<section data-toggle="false">
+			<h3 id="test" onclick="toggle(this)">Contrôle limité<i class="fa fa-1x fa-chevron-right" aria-hidden="true"></i></h3>
+			<div class="contenu">
+				<p>
+					Les keyframes ne permettent pas de maîtriser des animations complexes.
+				</p>
+				<p>
+					Avec JavaScript, le contrôle d'un élément grâce aux objets, est total; on peut ralentir, arrêter, accélerer, inverser..., les animations.
+					Chaque comportement peut être encapsulé.
+				</p>
+				<a href="http://www.disko.fr/reflexions/technique/animations-css-vs-javascript-aller-plus-loin-avec-les-bons-outils/" target="_blank" class="source">Source <i class="fa fa-link fa-1x" aria-hidden="true"></i></a>
+			</div>
+		</section>
+
+		<section data-toggle="false">
+			<h3 id="test" onclick="toggle(this)">Effets moins réalistes<i class="fa fa-1x fa-chevron-right" aria-hidden="true"></i></h3>
+			<div class="contenu">
+				<p>
+					Pour recréer des effets "motion" réalistes comme l'impression de gravité, la résistance, un effet "sticky" ou bien fluide, il vaut mieux se tourner vers JavaScript et des librairies comme GSAP ou Velocity.js
+				</p>
+
+				<a href="https://www.u92.com/fr/blogue/levolution-des-techniques-danimation/265" class="source" target="_blank" >Source <i class="fa fa-link fa-1x" aria-hidden="true"></i></a>
+			</div>
+		</section>
+
 	</div>
 
 </div> <!-- END PAGE -->

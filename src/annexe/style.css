@@ -13,6 +13,9 @@ body {
 	padding: 30px 15px;
 	max-width: 700px;
 }
+.page h1{
+	color : #00998B;
+}
 .page h2 {}
 .page p {}
 
@@ -22,6 +25,7 @@ body {
   margin: 100px 25px;
 }
 .row h1 {
+	color : #878785;
   text-align: center;
 }
 
@@ -32,9 +36,9 @@ section {
 	overflow: hidden;
 }
 section h3 {
-	color: orange;
+	color: #615e5f;
 	cursor: pointer;
-	border-bottom: 1px solid orange;
+	border-bottom: 1px solid #00998B;
 	padding-bottom: 5px;
   font-weight: normal;
 }
