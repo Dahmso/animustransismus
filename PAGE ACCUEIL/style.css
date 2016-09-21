@@ -1,0 +1,397 @@
+/* modification for prism.css */
+
+code[class*="language-"], pre[class*="language-"] {
+    tab-size: 1;
+}
+
+/* end modification for prism.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.sidebar {
+margin-left: 50px;
+}
+
+.clouds-wrapper, .content_mountains, .moon {
+  display: none;
+}
+
+.page {
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.row_circle {
+  background-image: 
+   repeating-linear-gradient(0deg, 
+      rgba(0,0,0,0.1) 0px, 
+      rgba(0,0,0,0.1) 5px, 
+      transparent 5px, 
+      transparent 10px);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+
+}
+
+.section_circle {
+  width: 33.33333333%;
+  padding: 50px;
+  /*animation-name: jump;
+  animation-duration: 3s;*/
+  z-index: 11;
+  float: left;
+  text-align: center;
+  line-height: 200px;
+  height: 100%;
+}
+
+.box_circle {
+  margin: auto;
+  position: relative;
+  display: flex;
+  width: 200px;
+  height: 100%;
+}
+
+
+.circle  {
+    position: absolute;
+    display: inline-block;
+    
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: none;
+
+
+    border-style: solid;
+    border-width: 100px;
+    border-color: #005F6B;
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    
+}
+
+.box_circle:hover .circle{
+    border-width: 0;
+    border: 1px solid darkcyan;
+}
+
+
+.box_circle span {
+  position: relative;
+  margin: auto;
+  color: white
+}
+
+.box_circle:hover span {
+  color: darkcyan;
+}
+
+.box_circle span::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  left: 25%;
+  bottom: 43%;
+  background-color: darkcyan;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.box_circle:hover span::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.section {
+width: 100%;
+height: 1000px;
+position: relative;
+display: inline-block;
+overflow: hidden;
+}
+
+.section_left {
+  width: 50%;
+  height: 100%;
+  background-color: darkcyan;
+  animation-name: jump;
+  animation-duration: 4s;
+  display: inline-block;
+  float: left;
+  z-index: 2;
+}
+
+.ball {
+    top: 35%;
+    animation-direction:alternate-reverse;
+    border-radius: 6px;
+    animation-duration: 60s;
+    position: absolute;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: -1;
+}
+
+.atelier {
+  margin: auto;
+  margin-top: 20vh;
+}
+
+.atelier h2 {
+    margin: auto;
+    display: block;
+    color: white;
+    font-size: 2em;
+    vertical-align: center;
+    margin-bottom: 2%;
+    margin-top: 29vh;
+    padding: 5% 0% 0% 0%;
+    z-index: 1;
+  }
+
+.atelier a {
+  margin: auto;
+  display: block;
+  background-color: none;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  transition: all .2s linear;
+  z-index: 2;
+  position: relative;
+}
+
+.atelier a::before {
+  content: "PLAY";
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 200px;
+  height: 90px;
+  text-align: center;
+  z-index: 1;
+  transition: all .2s ease-in-out;
+}
+
+.atelier a::after {
+  content: "S'ENTRAINER";
+  position: absolute;
+  top: 60px;
+  left: 0;
+  margin: auto;
+  width: 200px;
+  height: 90px;
+  text-align: center;
+  z-index: 1;
+  transition: all .2s ease-in-out;
+}
+
+.atelier a:hover {
+  background-color: rgba(255,255,255,0.8);
+  color: darkcyan;
+  text-align: center;
+
+}
+
+.section_right {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+
+}
+
+.tutoriel {
+  width: 100%;
+  height: 50%;
+  float: left;
+  background-color: #002A4A;
+}
+
+.tutoriel a {
+  display: flex;
+  height: 100%;
+}
+.tutoriel h2 {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  color: white;
+  font-size: 3em;
+  margin: auto;
+  font-weight: 100;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.tutoriel h2::before {
+  content:"SE FORMER";
+  font-family: 'Raleway:800', sans-serif;
+  width: 100%;
+  height: 75px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  margin:0;
+  text-align: center;
+  z-index: 1;
+  transition: all .5s ease-in-out;
+}
+
+.tutoriel h2::after {
+  content:"DECHIFFRER";
+  font-family: 'Raleway:800', sans-serif;
+  width: 100%;
+  height: 75px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  margin:0;
+  text-align: center;
+  z-index: 1;
+  transition: all .5s ease-in-out;
+}
+
+.tutoriel:hover h2::before {
+  top: -75px;
+}
+
+.tutoriel:hover h2::after {
+  top: 0px;
+}
+
+.reference {
+  width: 100%;
+  height: 50%;
+  float: left;
+  background-color: #071E3D;
+}
+
+.reference h2 {
+  line-height: 500px;
+  color: white;
+  font-size: 4em;
+  margin: 0;
+  font-weight: 100;  
+}
+
+
+footer {
+  width: 100%;
+  height: 150px;
+  display: flex;
+}
+
+.copyright{
+  margin: auto;
+  position: relative;
+
+  
+}
+
+.copyright .c {
+  margin: auto;
+  color: darkgrey;
+}
+
+.copyright .vingt {
+  position: absolute;
+  font-size: 9em;
+  color: aquamarine;
+  top: -130px;
+  left: 160px;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.copyright .seize {
+  position: absolute;
+  font-size: 9em;
+  color: aquamarine;
+  top: -70px;
+  left: 230px;
+  opacity: 0.8;
+}
+
+@media (max-width: 1078px) {
+  .box_circle {
+    margin-left: 5vw;;
+  }
+}
+
+@media (max-width: 960px) {
+ .box_circle {
+   margin-left: 2vw;
+   margin-bottom: 2vw;
+ }
+}
+@media (max-width: 918px) {
+ .box_circle {
+   margin-left: 0;
+   margin-bottom: 0;
+ }
+
+.page .animation, .page .transition, .page .transformation {
+    width: 200px;
+    height: 200px;
+
+}
+.page .animation h1, .page .transition h1, .page .transformation h1{
+line-height: 200px;
+}
+}
+
+@media (max-width: 705px) {
+  .page .animation, .page .transition, .page .transformation {
+      width: 150px;
+      height: 150px;
+
+  }
+  .atelier {
+    margin:0;
+  }
+
+  .page .animation h1, .page .transition h1, .page .transformation h1{
+    font-size: 1.2rem;
+    line-height: 150px;
+  }
+}
+@media (max-width: 705px) {
+  .atelier .title {
+    font-size: 1.5em;
+  }
+  .pagevivezlexperience .atelier  a {
+    width: auto;
+  }
+}
+
