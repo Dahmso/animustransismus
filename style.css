@@ -4,120 +4,146 @@ code[class*="language-"], pre[class*="language-"] {
     tab-size: 1;
 }
 
-
 /* end modification for prism.css */
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
+.sidebar {
+margin-left: 50px;
+}
 
+.clouds-wrapper, .content_mountains, .moon {
+  display: none;
+}
+#frame {
+  text-align: center;
+}
 .page {
-  display: block;
-    width: 100%;
-    text-align: center;
-}
-
-.pageanimtransitransfo {
-  width: 100%;
-  background-color: rgba(128, 128, 128,0.2);
-  padding: 50px;
-  animation-name: jump;
-  animation-duration: 3s;
-  z-index: 11;
-  margin: 10 10 0 10;
-
-}
-
-
-.page .animation, .page .transition, .page .transformation {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    width: 250px;
-    color: white;
-    height: 250px;
-    border-radius: 250px;
-
-}
-
-.page .animation, .page .transition, .page .transformation {
-    background-color: orangered;
-    color: white;
     position: relative;
-    transition: all 0.2s ease-in-out;
-    z-index: 1;
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    margin: auto;
 }
-.tutolink {
+
+.row_circle {
+  background-image:
+   repeating-linear-gradient(0deg,
+      rgba(0,0,0,0.1) 0px,
+      rgba(0,0,0,0.1) 5px,
+      transparent 5px,
+      transparent 10px);
+  background-repeat: no-repeat;
   width: 100%;
-  display: inline-block;
+  height: 300px;
+
+}
+
+.section_circle {
+  width: 33.33333333%;
+  padding: 50px;
+  /*animation-name: jump;
+  animation-duration: 3s;*/
+  z-index: 11;
   float: left;
-  transition: all 0.2s ease-in-out;
+  text-align: center;
+  line-height: 200px;
+  height: 100%;
 }
-.tutolink:hover {
-  box-shadow: 0 0 20px 0 rgba(0,0,0,.2),0 5px 5px 0 rgba(0,0,0,.24);
-  transform: translate(-2px,2px);
+
+.box_circle {
+  margin: auto;
+  position: relative;
+  display: flex;
+  width: 200px;
+  height: 100%;
 }
-.tuto {
-  text-align:center;
-  background-color: #129D86;
-  height: 51%;
+
+
+.circle  {
+    position: absolute;
+    display: inline-block;
+
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: none;
+
+
+    border-style: solid;
+    border-width: 100px;
+    border-color: #005F6B;
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+
 }
-.grandediv {
+
+.box_circle:hover .circle{
+    border-width: 0;
+    border: 1px solid darkcyan;
+}
+
+
+.box_circle span {
+  position: relative;
+  margin: auto;
+  color: white
+}
+
+.box_circle:hover span {
+  color: darkcyan;
+}
+
+.box_circle span::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  left: 25%;
+  bottom: 43%;
+  background-color: darkcyan;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.box_circle:hover span::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.section {
 width: 100%;
 height: 600px;
-padding: 10px;
 position: relative;
 display: inline-block;
 overflow: hidden;
-
 }
-.deuxpetitesdiv {
-  width: 60%;
+
+.section_left {
+  width: 50%;
   height: 100%;
-  padding-left: 10px;
+  background-color: darkcyan;
+  animation-name: jump;
+  animation-duration: 4s;
   display: inline-block;
-
-}
-.tuto h2 {
-  line-height: 300px;
-  color: white;
-  font-size: 6em;
-  margin: 0;
-  font-family: 'Monoton', cursive;
-  font-weight: 100;
-}
-
-.page .animation:before, .page .transition:before, .page .transformation:before {
-    content: "";
-    position: absolute;
-    width: 40%;
-    height: 4px;
-    bottom: 40%;
-    left: 30%;
-    background-color: white;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-.page .animation:hover:before, .page .transition:hover:before, .page .transformation:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-
-.page .animation:hover, .page .transition:hover, .page .transformation:hover  {
-    z-index: 2;
-}
-
-.transition h1, .transformation h1, .animation h1 {
-  font-size: 1.6em;
-  line-height: 250px;
-  margin: 0;
-  padding: 0;
+  float: left;
+  z-index: 2;
 }
 
 .ball {
@@ -131,41 +157,25 @@ overflow: hidden;
     animation-iteration-count: infinite;
     z-index: -1;
 }
-.cercle1 {
-  display: inline-block;
 
-}
-.cercle {
-  display: inline-block;
-  margin-left: 10vw;
-}
-
-.pagevivezlexperience {
-  width: 40%;
-  height:600px;
-  background-color: rgb(0, 139, 139);
-  animation-name: jump;
-  animation-duration: 4s;
-  display: inline-block;
-  float: left;
-}
 .atelier {
   margin: auto;
   margin-top: 20vh;
 }
- .atelier .title {
-      margin: auto;
-      display: block;
-      color: white;
-      font-size: 2em;
-      vertical-align: center;
-      margin-bottom: 2%;
-      margin-top: 29vh;
-      padding: 5% 0% 0% 0%;
-      z-index: 1;
 
-    }
-.pagevivezlexperience .atelier a {
+.atelier h2 {
+    margin: auto;
+    display: block;
+    color: white;
+    font-size: 2em;
+    vertical-align: center;
+    margin-bottom: 2%;
+    margin-top: 29vh;
+    padding: 5% 0% 0% 0%;
+    z-index: 1;
+  }
+
+.atelier a {
   margin: auto;
   display: block;
   background-color: none;
@@ -175,55 +185,180 @@ overflow: hidden;
   border-radius: 3px;
   color: white;
   width: 200px;
+  height: 30px;
   text-align: center;
-  transition: all 0.3s linear;
+  transition: all .2s linear;
+  z-index: 2;
+  position: relative;
+}
+
+.atelier a::before {
+  content: "PLAY";
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 200px;
+  height: 90px;
+  text-align: center;
   z-index: 1;
+  transition: all .2s ease-in-out;
 }
+
+.atelier a::after {
+  content: "S'ENTRAINER";
+  position: absolute;
+  top: 60px;
+  left: 0;
+  margin: auto;
+  width: 200px;
+  height: 90px;
+  text-align: center;
+  z-index: 1;
+  transition: all .2s ease-in-out;
+}
+
 .atelier a:hover {
-  background-color: white;
+  background-color: rgba(255,255,255,0.8);
   color: darkcyan;
-  width: 300px;
+  text-align: center;
+
 }
-.referencediv {
+
+.section_right {
+  width: 50%;
+  height: 100%;
   display: inline-block;
   float: left;
-  color: white;
-  height: 50.5%;
+
+}
+
+.tutoriel {
   width: 100%;
-  margin-top: 10px;
-  background-color: orangered;
-  transition: all 0.2s ease-in-out;
-
+  height: 50%;
+  float: left;
+  background-color: #002A4A;
 }
-.referencediv h2 {
-  padding: 0;
-  margin: 0;
-  font-size: 4em;
-  line-height: 300px;
+
+.tutoriel a {
+  display: flex;
+  height: 100%;
+}
+.tutoriel h2 {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  color: white;
+  font-size: 3em;
+  margin: auto;
   font-weight: 100;
-  font-family: 'Plaster', cursive;
+  z-index: 2;
+  overflow: hidden;
 }
 
-.referencediv:hover {
-  box-shadow: 0 0 20px 0 rgba(0,0,0,.2),0 5px 5px 0 rgba(0,0,0,.24);
-  transform: translate(-2px,-2px);
+.tutoriel h2::before {
+  content:"SE FORMER";
+  font-family: 'Raleway:800', sans-serif;
+  width: 100%;
+  height: 75px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  margin:0;
+  text-align: center;
+  z-index: 1;
+  transition: all .5s ease-in-out;
 }
 
+.tutoriel h2::after {
+  content:"DECHIFFRER";
+  font-family: 'Raleway:800', sans-serif;
+  width: 100%;
+  height: 75px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  margin:0;
+  text-align: center;
+  z-index: 1;
+  transition: all .5s ease-in-out;
+}
+
+.tutoriel:hover h2::before {
+  top: -75px;
+}
+
+.tutoriel:hover h2::after {
+  top: 0px;
+}
+
+.reference {
+  width: 100%;
+  height: 50%;
+  float: left;
+  background-color: #071E3D;
+}
+
+.reference h2 {
+  line-height: 300px;
+  color: white;
+  font-size: 4em;
+  margin: 0;
+  font-weight: 100;
+}
+
+
+footer {
+  width: 100%;
+  height: 150px;
+  display: flex;
+}
+
+.copyright{
+  margin: auto;
+  position: relative;
+
+
+}
+
+.copyright .c {
+  margin: auto;
+  color: darkgrey;
+}
+
+.copyright .vingt {
+  position: absolute;
+  font-size: 9em;
+  color: aquamarine;
+  top: -130px;
+  left: 160px;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.copyright .seize {
+  position: absolute;
+  font-size: 9em;
+  color: aquamarine;
+  top: -70px;
+  left: 230px;
+  opacity: 0.8;
+}
 
 @media (max-width: 1078px) {
-  .cercle,.cercle1 {
+  .box_circle {
     margin-left: 5vw;;
   }
 }
 
-@media (max-width: 1016px) {
- .cercle,.cercle1 {
+@media (max-width: 960px) {
+ .box_circle {
    margin-left: 2vw;
    margin-bottom: 2vw;
  }
 }
 @media (max-width: 918px) {
- .cercle,.cercle1 {
+ .box_circle {
    margin-left: 0;
    margin-bottom: 0;
  }
@@ -238,7 +373,7 @@ line-height: 200px;
 }
 }
 
-@media (max-width: 713px) {
+@media (max-width: 705px) {
   .page .animation, .page .transition, .page .transformation {
       width: 150px;
       height: 150px;
@@ -246,26 +381,18 @@ line-height: 200px;
   }
   .atelier {
     margin:0;
-    font-size: 1.5em;
   }
 
   .page .animation h1, .page .transition h1, .page .transformation h1{
     font-size: 1.2rem;
     line-height: 150px;
   }
-
-
+}
+@media (max-width: 705px) {
+  .atelier .title {
+    font-size: 1.5em;
+  }
   .pagevivezlexperience .atelier  a {
     width: auto;
   }
-  .logo {
-    margin-top: 4em;
-    margin-bottom: 4em;
-  }
-}
-@media (max-width: 563px) {
-  .cercle,.cercle1 {
-    display: block;
-  }
-
 }

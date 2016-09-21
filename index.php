@@ -193,29 +193,22 @@ function displayContentHeader(elem) {
   contentHeader.style.display = "none";
   }
   if (elem === "atelier") {
-    setTimeout(function(){
       contentHeader.style.display = "block";
       moon.style.visibility = "visible";
       contentMountains.style.visibility = "visible";
       cloudsWrapper.style.visibility = "visible";
-    }, 500);
   }
   if (elem === "animation") {
-    setTimeout(function(){
     contentHeader.style.display = "block";
     contentHeader.style.height = "20vh";
     moon.style.visibility = "visible";
     contentMountains.style.visibility = "visible";
-  }, 500);
-
   }
   if (elem === "transition") {
-    setTimeout(function(){
     contentHeader.style.display = "block";
     moon.style.visibility = "hidden";
     contentMountains.style.visibility = "visible";
     cloudsWrapper.style.visibility = "hidden";
-  }, 500);
   }
 }
 }
