@@ -181,10 +181,10 @@ function verifPage(){
 		url = url.split('/');
 		url = url[3];
 	if (init == url) {
-		console.log('verifPage()', init + ' = ' + url)
+		//console.log('verifPage()', init + ' = ' + url)
 		return;
 	} else {
-		console.log('verifPage()', init + ' =/= ' + url)
+		//console.log('verifPage()', init + ' =/= ' + url)
 		if (url.length === 0) {
 			changePage('accueil');
 		} else {
@@ -192,6 +192,29 @@ function verifPage(){
 		}
 	}
 }
+function chargerPage(param_page){
+	var src = 'src/' + param_page + 'index.php';
+	$.ajax({
+       url : 'more_com.php',
+       type : 'GET',
+       dataType : 'html',
+       success : function(code_html, statut){
+        //console.log(statut);
+        return code_html;
+       },
+
+       error : function(resultat, statut, erreur){
+        console.log(statut);
+       },
+
+       complete : function(resultat, statut){
+       	//console.log(statut);
+       	//console.log(resultat);
+       }
+    });
+}
+var pageTransition = chargerPage('transition');
+console.log(pageTransition);
 function loader(sec){
 	var load = document.getElementById('load');
 	load.style.display = "block";
@@ -242,7 +265,6 @@ window.onload=function()
 		var anchors = document.querySelectorAll('.leftbar a');
 		console.log(anchors);
 		for (var i = 0; i < anchors.length - 1; i++) {
-			if (i !== 7) { // 7 est la balise 'a' qui sert a afficher la sidebar
 				anchors[i].addEventListener('click', function(e){
 					e.preventDefault();
 					var target = e.toElement;
@@ -254,7 +276,6 @@ window.onload=function()
 					window.target = target.getAttribute('href');
 					changePage(target.getAttribute('href'));
 				});
-			}
 		}
 	}, 100)
 }
