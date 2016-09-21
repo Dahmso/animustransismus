@@ -135,24 +135,28 @@ function changePage(param_url, param_load=null){
 			document.getElementById('frame').innerHTML = "";
 			$frame.attr('data-init', url)
 			changeUrl('', url);
+      displayContentHeader("accueil");
 		break;
 
 		case'atelier':
 			$frame.load('src/atelier/index.php');
 			$frame.attr('data-init', url)
 			changeUrl(url.toUpperCase(), url)
+      displayContentHeader("atelier");
 		break;
 
 		case'animation':
 			$frame.load('src/animation/index.php');
 			$frame.attr('data-init', url)
 			changeUrl(url.toUpperCase(), url)
+      displayContentHeader("animation");
 		break;
 
 		case'transition':
 			$frame.load('src/transition/index.php');
 			$frame.attr('data-init', url)
 			changeUrl(url.toUpperCase(), url)
+      displayContentHeader("transition");
 		break;
 
 		case'annexe':
@@ -164,6 +168,23 @@ function changePage(param_url, param_load=null){
 		default:
 			// console.log('Switch: Default ', url)
 	}
+}
+function displayContentHeader() {
+  var contentHeader = document.querySelector('.content_header');
+  var moon = document.querySelector('.moon');
+  var cloudsWrapper = document.querySelector('.clouds-wrapper');
+  var contentMountains = document.querySelector('.content_mountains');
+  if ("accueil") {
+  contentHeader.style.display = "none";
+  } if ("atelier") {
+    contentHeader.style.display = "block";
+    } if ("animation") {
+      contentHeader.style.display = "block";
+      } if ("transition") {
+        contentHeader.style.display = "block";
+      } if ("annexe") {
+        contentHeader.style.display = "block";
+          }
 }
 function changeUrl(title, url) {
     if (typeof (history.pushState) != "undefined") {
