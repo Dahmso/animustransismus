@@ -309,8 +309,10 @@ window.onload=function()
 		anchors.setAnchor(document.querySelectorAll('.leftbar a'));
 		anchors.setAnchor(document.querySelectorAll('.listbar a'));
 		var allAnchors = anchors.getAnchors();
-		for (var i = 0; i < allAnchors.length - 1; i++) {
+		console.log(allAnchors);
+		for (var i = 0; i < allAnchors.length; i++) {
 				allAnchors[i].addEventListener('click', function(e){
+					console.log('clic');
 					e.preventDefault();
 					var target = e.toElement;
 					while (target.getAttribute('href') === null) {
