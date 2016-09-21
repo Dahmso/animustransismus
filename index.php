@@ -84,6 +84,7 @@ var toggleButton = {
       return this.selectdiv;
   },
   clickButton: function() {
+  	console.log('clic');
     var spanTop = document.querySelector("#rotatespantop");
     var spanBottom = document.querySelector("#rotatespanbottom");
     var spantoHide = document.querySelector("#hidespan");
@@ -236,7 +237,7 @@ var CheminComplet	= document.location.href;
 var NomDuFichier	= CheminComplet.substring(CheminComplet.lastIndexOf( "/" )+1 );
 var urlOnLoad 			= NomDuFichier.replace('?page=', "");
 //console.log(urlOnLoad)
-//setInterval(verifPage, 5000)
+setInterval(verifPage, 1000)
 
 window.onload=function()
 {
