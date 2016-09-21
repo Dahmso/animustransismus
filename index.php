@@ -137,6 +137,7 @@ function changePage(param_url, param_load=null){
 		break;
 
 		case'atelier':
+      displayContentHeader("atelier");
 			$frame.load('src/atelier/index.php');
 			$frame.attr('data-init', url)
 			changeUrl(url.toUpperCase(), url)
@@ -163,6 +164,11 @@ function changePage(param_url, param_load=null){
 		default:
 			// console.log('Switch: Default ', url)
 	}
+}
+function displayContentHeader() {
+  if ("atelier") {
+    document.querySelector(".content_header").style.display = "none";
+  }
 }
 function changeUrl(title, url) {
     if (typeof (history.pushState) != "undefined") {
