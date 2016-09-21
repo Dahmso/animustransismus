@@ -134,6 +134,8 @@ function changePage(param_url, param_load=null){
 		case'accueil':
 			document.getElementById('frame').innerHTML = "";
 			$frame.attr('data-init', url)
+			$frame.fadeOut();
+			$('#contenu').fadeIn();
 			changeUrl('', url);
       displayContentHeader("accueil");
 		break;
@@ -141,6 +143,8 @@ function changePage(param_url, param_load=null){
 		case'atelier':
 			$frame.load('src/atelier/index.php');
 			$frame.attr('data-init', url)
+			$frame.fadeIn();
+			$('#contenu').fadeOut();
 			changeUrl(url.toUpperCase(), url)
       displayContentHeader("atelier");
 		break;
@@ -148,6 +152,8 @@ function changePage(param_url, param_load=null){
 		case'animation':
 			$frame.load('src/animation/index.php');
 			$frame.attr('data-init', url)
+			$frame.fadeIn();
+			$('#contenu').fadeOut();
 			changeUrl(url.toUpperCase(), url)
       displayContentHeader("animation");
 		break;
@@ -155,6 +161,8 @@ function changePage(param_url, param_load=null){
 		case'transition':
 			$frame.load('src/transition/index.php');
 			$frame.attr('data-init', url)
+			$frame.fadeIn();
+			$('#contenu').fadeOut();
 			changeUrl(url.toUpperCase(), url)
       displayContentHeader("transition");
 		break;
@@ -162,6 +170,8 @@ function changePage(param_url, param_load=null){
 		case'annexe':
 			$frame.load('src/annexe/index.php');
 			$frame.attr('data-init', url)
+			$frame.fadeIn();
+			$('#contenu').fadeOut();
 			changeUrl(url.toUpperCase(), url)
       displayContentHeader("annexe");
 		break;
@@ -261,13 +271,25 @@ function chargerPage(param_page){
     });
 }
 var pageTransition = chargerPage('transition');
-console.log(pageTransition);
+//console.log(pageTransition);
 function loader(sec){
 	var load = document.getElementById('load');
 	load.style.display = "block";
 	load.style.opacity = "1";
 	setTimeout(function(){load.style.opacity = "0";}, sec + '000');
 	setTimeout(function(){load.style.display = "none"; load.remove();}, sec + '100');
+}
+function Anchor(){
+	this.lists = new Array();
+
+	this.setAnchor = function(param_anchors){
+		for (var i = param_anchors.length - 1; i >= 0; i--) {
+			this.lists.push(param_anchors[i])
+		}
+	}
+	this.getAnchors = function(){
+		return this.lists;
+	}
 }
 
 /*
@@ -300,7 +322,6 @@ loader('2')
 var CheminComplet	= document.location.href;
 var NomDuFichier	= CheminComplet.substring(CheminComplet.lastIndexOf( "/" )+1 );
 var urlOnLoad 			= NomDuFichier.replace('?page=', "");
-//console.log(urlOnLoad)
 setInterval(verifPage, 1000)
 
 window.onload=function()
@@ -309,10 +330,12 @@ window.onload=function()
 	changePage(urlOnLoad, true);
 
 	setTimeout(function(){
-		var anchors = document.querySelectorAll('.leftbar a');
-		console.log(anchors);
-		for (var i = 0; i < anchors.length - 1; i++) {
-				anchors[i].addEventListener('click', function(e){
+		var anchors = new Anchor();
+		anchors.setAnchor(document.querySelectorAll('.leftbar a'));
+		anchors.setAnchor(document.querySelectorAll('.listbar a'));
+		var allAnchors = anchors.getAnchors();
+		for (var i = 0; i < allAnchors.length - 1; i++) {
+				allAnchors[i].addEventListener('click', function(e){
 					e.preventDefault();
 					var target = e.toElement;
 					while (target.getAttribute('href') === null) {
