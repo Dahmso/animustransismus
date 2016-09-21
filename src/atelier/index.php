@@ -332,7 +332,7 @@ setTimeout(function()
 
 	editor_css.on("focus", afficheMessageForFullScreen);
 
-	console.log('2sec');
+	//console.log('2sec');
 }, 500);
 
 })()</script>
