@@ -84,13 +84,13 @@ var toggleButton = {
       return this.selectdiv;
   },
   clickButton: function() {
-  	console.log('clic');
     var spanTop = document.querySelector("#rotatespantop");
     var spanBottom = document.querySelector("#rotatespanbottom");
     var spantoHide = document.querySelector("#hidespan");
     var spanMenu = document.querySelectorAll("#active_menu span");
     var iconMenu = document.querySelector("#active_menu");
     this.sidebar();
+    this.closeSideBar();
     if (this.status === false){
       this.selectdiv.style.marginLeft = "-100%";
       spantoHide.style.display = "block";
@@ -112,11 +112,24 @@ var toggleButton = {
       spanTop.style.transform = "rotate(45deg)";
       spanBottom.style.transform = "rotate(-45deg)";
       spanBottom.style.marginTop = "-8px";
-
       return this.status = false;
     }
+  },
+  closeSideBar: function() {
+    var divLiSideBar = document.querySelectorAll(".lisidebar");
+    for (var i = 0; i < divLiSideBar.length; i++) {
+      var el = divLiSideBar[i];
+      el.addEventListener('click', function(){
+          if (this.status === false) {
+              var menuSide = document.querySelector(".sidebar");
+              menuSide.style.display = "-100%";
+              status = false;
+              this.clickButton();
+          }
+    }.bind(this));
   }
 }
+};
 document.querySelector("#active_menu").addEventListener("click", toggleButton.clickButton.bind(toggleButton));
 function changePage(param_url, param_load=null){
 	var urlInSearchBar = window.location.pathname.replace('/', '');

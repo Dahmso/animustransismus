@@ -1,33 +1,38 @@
 	<div class="sidebar">
 		<div class="leftbar">
 			<ul>
-				<a href="accueil/">
-					<li class="green">
+				<a class="lisidebar" href="accueil/">
+					<li>
 						<h3><i class="fa fa-home fa-2x" aria-hidden="true"></i>Home</h3>
 					</li>
 				</a>
-				<a href="animation/">
-					<li class="yellow">
+				<a class="lisidebar" href="animation/">
+					<li>
 						<h3><i class="fa fa-clone fa-2x" aria-hidden="true"></i>Animation</h3>
 					</li>
 				</a>
-				<a href="transition/">
-					<li class="blue">
+				<a class="lisidebar" href="transition/">
+					<li>
 						<h3><i class="fa fa-exchange fa-2x" aria-hidden="true"></i>Transition</h3>
 					</li>
 				</a>
-				<a href="atelier/">
-					<li class="black">
+				<a class="lisidebar" href="atelier/">
+					<li>
 						<h3><i class="fa fa-book fa-2x" aria-hidden="true"></i>Atelier</h3>
 					</li>
 				</a>
-				<a href="annexe/">
-					<li class="annexe">
-						<h3><i class="fa fa-book fa-2x" aria-hidden="true"></i>Annexe</h3>
+				<a class="lisidebar" href="annexe/">
+					<li>
+						<h3><i class="fa fa-book fa-2x" aria-hidden="true"></i>Lexique</h3>
 					</li>
 				</a>
-				<a href="#">
-					<li class="orange">
+				<a class="lisidebar" href="reference/">
+					<li>
+						<h3><i class="fa fa-book fa-2x" aria-hidden="true"></i>Reference</h3>
+					</li>
+				</a>
+				<a class="lisidebar" href="#">
+					<li>
 						<h3><i class="fa fa-github fa-2x" aria-hidden="true"></i>Github</h3>
 					</li>
 				</a>
@@ -59,6 +64,9 @@
 									<a href="atelier/"><h3>Atelier</h3>	</a>
 							</li>
 							<li class="listbarli">
+								<a href="annexe/"><h3>Lexique</h3>	</a>
+							</li>
+							<li class="listbarli">
 								<a href="annexe/"><h3>Références</h3>	</a>
 							</li>
 					</ul>
@@ -70,7 +78,7 @@
 				</div>
 			</div>
 	<header id="header">
-		<div class="logo"><img src="./h1index.png"></div>
+		<div class="logo"><img src="logo.svg"></div>
 		<div class="content_header">
 		<div class="moon">
 		<div class="sun"></div>
