@@ -40,14 +40,14 @@ body {
 
 .section_circle {
   width: 33.33333333%;
-  padding: 50px;
+  padding: 35px;
   /*animation-name: jump;
   animation-duration: 3s;*/
   z-index: 11;
   float: left;
   text-align: center;
   line-height: 200px;
-  height: 100%;
+  /*height: 100%;*/
 }
 
 .box_circle {
@@ -339,56 +339,4 @@ footer {
   top: -70px;
   left: 230px;
   opacity: 0.8;
-}
-
-@media (max-width: 1078px) {
-  .box_circle {
-    margin-left: 5vw;;
-  }
-}
-
-@media (max-width: 960px) {
- .box_circle {
-   margin-left: 2vw;
-   margin-bottom: 2vw;
- }
-}
-@media (max-width: 918px) {
- .box_circle {
-   margin-left: 0;
-   margin-bottom: 0;
- }
-
-.page .animation, .page .transition, .page .transformation {
-    width: 200px;
-    height: 200px;
-
-}
-.page .animation h1, .page .transition h1, .page .transformation h1{
-line-height: 200px;
-}
-}
-
-@media (max-width: 705px) {
-  .page .animation, .page .transition, .page .transformation {
-      width: 150px;
-      height: 150px;
-
-  }
-  .atelier {
-    margin:0;
-  }
-
-  .page .animation h1, .page .transition h1, .page .transformation h1{
-    font-size: 1.2rem;
-    line-height: 150px;
-  }
-}
-@media (max-width: 705px) {
-  .atelier .title {
-    font-size: 1.5em;
-  }
-  .pagevivezlexperience .atelier  a {
-    width: auto;
-  }
 }
