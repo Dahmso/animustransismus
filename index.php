@@ -136,7 +136,7 @@ function changePage(param_url, param_load=null){
 	var $frame = $('#frame');
 	//console.log('param_url : ', param_url);
 	var url = param_url.replace('/', '')
-	console.log('url : ', url)
+	//console.log('url : ', url)
 	if ( urlInSearchBar === url && param_load === null) { console.log('Equivalent : ', urlInSearchBar + ' = ' + url); return false}
 	switch(url){
 
@@ -261,29 +261,7 @@ function verifPage(){
 		}
 	}
 }
-function chargerPage(param_page){
-	var src = 'src/' + param_page + 'index.php';
-	$.ajax({
-       url : 'more_com.php',
-       type : 'GET',
-       dataType : 'html',
-       success : function(code_html, statut){
-        //console.log(statut);
-        return code_html;
-       },
 
-       error : function(resultat, statut, erreur){
-        console.log(statut);
-       },
-
-       complete : function(resultat, statut){
-       	//console.log(statut);
-       	//console.log(resultat);
-       }
-    });
-}
-var pageTransition = chargerPage('transition');
-//console.log(pageTransition);
 function loader(sec){
 	var load = document.getElementById('load');
 	load.style.display = "block";
@@ -309,7 +287,8 @@ loader('2')
 var CheminComplet	= document.location.href;
 var NomDuFichier	= CheminComplet.substring(CheminComplet.lastIndexOf( "/" )+1 );
 var urlOnLoad 			= NomDuFichier.replace('?page=', "");
-setInterval(verifPage, 1000)
+setInterval(verifPage, 500)
+
 
 window.onload=function()
 {
@@ -323,7 +302,7 @@ window.onload=function()
 		anchors.setAnchor(document.querySelectorAll('.row_circle a'));
 		anchors.setAnchor(document.querySelectorAll('.section a'));
 		var allAnchors = anchors.getAnchors();
-		console.log(allAnchors);
+		//console.log(allAnchors);
 		for (var i = 0; i < allAnchors.length; i++) {
 			allAnchors[i].addEventListener('click', function(e){
 				//console.log('clic');
