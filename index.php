@@ -69,7 +69,7 @@ $index = true;
 		<div id="contenu"></div>
 	</div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="./lib/jquery-2.1.4.min"></script>
+<script src="./lib/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="ace_init.js"></script>
 <script type="text/javascript">
 ;(function(alias){
@@ -298,21 +298,23 @@ window.onload=function()
 		var anchors = new Anchor();
 		anchors.setAnchor(document.querySelectorAll('.leftbar a'));
 		anchors.setAnchor(document.querySelectorAll('.listbar a'));
+		anchors.setAnchor(document.querySelectorAll('.row_circle a'));
+		anchors.setAnchor(document.querySelectorAll('.section a'));
 		var allAnchors = anchors.getAnchors();
 		console.log(allAnchors);
 		for (var i = 0; i < allAnchors.length; i++) {
-				allAnchors[i].addEventListener('click', function(e){
-					console.log('clic');
-					e.preventDefault();
-					var target = e.toElement;
-					while (target.getAttribute('href') === null) {
-						target = target.parentNode;
-						console.log('target attr = ', target.getAttribute('href'));
-					}
-					console.log('var target = ', target);
-					window.target = target.getAttribute('href');
-					changePage(target.getAttribute('href'));
-				});
+			allAnchors[i].addEventListener('click', function(e){
+				console.log('clic');
+				e.preventDefault();
+				var target = e.toElement;
+				while (target.getAttribute('href') === null) {
+					target = target.parentNode;
+					console.log('target attr = ', target.getAttribute('href'));
+				}
+				console.log('var target = ', target);
+				window.target = target.getAttribute('href');
+				changePage(target.getAttribute('href'));
+			});
 		}
 	}, 100)
 }
