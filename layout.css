@@ -266,20 +266,11 @@ code[class*="language-"], pre[class*="language-"] {
   }
 /* End frame */
 
-/* Cube */
-  #cube {
-    display: none;
-    position: absolute;
-    z-index: 9999999999999;
-    background-color: red;
-    width: 25px;
-    height: 25px;
-    top: 0px;
-    left: 0px;
-    opacity: 0.5;
-    transition: all 0.5s linear;
+/* Contenu */
+  #contenu {
+    text-align: center;
   }
-/* End Cube */
+/* End Contenu */
 
 
 ::-webkit-scrollbar {
