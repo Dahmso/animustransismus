@@ -185,17 +185,18 @@ overflow: hidden;
   text-align: center;
   transition: all .2s linear;
   z-index: 2;
+  overflow: hidden;
   position: relative;
 }
 
 .atelier a::before {
   content: "PLAY";
   position: absolute;
-  top: 0;
+  top: 6px;
   left: 0;
   margin: auto;
   width: 200px;
-  height: 90px;
+  height: 30px;
   text-align: center;
   z-index: 1;
   transition: all .2s ease-in-out;
@@ -204,21 +205,28 @@ overflow: hidden;
 .atelier a::after {
   content: "S'ENTRAINER";
   position: absolute;
-  top: 60px;
+  top: 30px;
   left: 0;
   margin: auto;
   width: 200px;
-  height: 90px;
+  height: 30px;
   text-align: center;
   z-index: 1;
   transition: all .2s ease-in-out;
 }
 
-.atelier a:hover {
+.atelier:hover a:hover {
   background-color: rgba(255,255,255,0.8);
   color: darkcyan;
   text-align: center;
 
+}
+.atelier a:hover::before {
+  top:-30px;
+}
+
+.atelier a:hover::after {
+  top:6px;
 }
 
 .section_right {
