@@ -1,15 +1,15 @@
-<div class="page">
+<div class="page" style="width: 80%;">
 	<div class="row_circle">
 
 	   <div class="section_circle">
-	   		<a href="transformation/" class="box_circle">
+	   		<a href="transition/" class="box_circle">
 		     	<div class="circle color1"></div>
 		     	<span>Transitions</span>
 		     </a>
 		</div>
 
 	   <div class="section_circle">
-		    <a href="transformation/" class="box_circle">
+		    <a href="animation/" class="box_circle">
 		     	<div class="circle color2"></div>
 		     	<span>Animations</span>
 		     </a>
@@ -29,13 +29,13 @@
 	      <div id="balles"></div>
 	      <div class="atelier">
 	        <h2>Commencez l'expérience</h2>
-	        	<a href="#"></a>
+	        	<a href="atelier/"></a>
 	      </div>
 	    </div>
 
 	    <div class="section_right">
 	      <div class="tutoriel">
-	        <a href="#">
+	        <a href="annexe">
 	           <h2></h2>
 	        </a>
 	      </div>
