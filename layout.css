@@ -71,14 +71,11 @@ code[class*="language-"], pre[class*="language-"] {
 
   .topbar {
     margin: auto;
-    width: 100%;
+    width: 80%;
+    text-align: center;
     height: 100px;
     background-color: white;
-    display: inline-block;
     position: relative;
-  }
-  .menutopbar {
-    width: 75%;
   }
   .menutopbar,.gitbuttondiv{
     display: inline-block;
@@ -86,8 +83,8 @@ code[class*="language-"], pre[class*="language-"] {
    }
    .gitbuttondiv  {
      text-align: right;
-     margin: 1em;
      width: 20%;
+     padding: 20px;
    }
   .menutopbar  li{
     font-family: Helvetica;
@@ -269,7 +266,6 @@ code[class*="language-"], pre[class*="language-"] {
 /* Contenu */
   #contenu {
     text-align: center;
-  }
 /* End Contenu */
 
 
@@ -341,8 +337,8 @@ header {
     position: relative;
     margin:auto;
     text-align: center;
-    margin-top: 5em;
-    margin-bottom: 5em;
+    margin-top: 3em;
+    margin-bottom: 3em;
   }
   @keyframes circle {
       from
@@ -453,7 +449,6 @@ header {
   float: left;
   list-style: none;
   z-index: 13;
-
 }
 
 .peak1 {
