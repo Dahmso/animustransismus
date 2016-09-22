@@ -269,23 +269,7 @@ code[class*="language-"], pre[class*="language-"] {
 /* Contenu */
   #contenu {
     text-align: center;
-  }
-/* END Contenu */
-
-/* Cube */
-  #cube {
-    display: none;
-    position: absolute;
-    z-index: 9999999999999;
-    background-color: red;
-    width: 25px;
-    height: 25px;
-    top: 0px;
-    left: 0px;
-    opacity: 0.5;
-    transition: all 0.5s linear;
-  }
-/* End Cube */
+/* End Contenu */
 
 
 ::-webkit-scrollbar {
@@ -634,9 +618,7 @@ a {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
-.page {
-	margin: auto;
-}
+
 #active_menu ,.sidebar {
   display: none;
 }
