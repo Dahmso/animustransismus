@@ -266,6 +266,12 @@ code[class*="language-"], pre[class*="language-"] {
   }
 /* End frame */
 
+/* Contenu */
+  #contenu {
+    text-align: center;
+  }
+/* END Contenu */
+
 /* Cube */
   #cube {
     display: none;

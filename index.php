@@ -69,7 +69,7 @@ $index = true;
 		<div id="contenu"></div>
 	</div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="./lib/jquery-2.1.4.min"></script>
+<script src="./lib/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="ace_init.js"></script>
 <script type="text/javascript">
 ;(function(alias){
