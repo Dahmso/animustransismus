@@ -276,12 +276,6 @@ var NomDuFichier	= CheminComplet.substring(CheminComplet.lastIndexOf( "/" )+1 );
 var urlOnLoad 			= NomDuFichier.replace('?page=', "");
 setInterval(verifPage, 500)
 
-var page_accueil = "";
-$.get("page-accueil.php", function(response) {
-    page_accueil += response;
-    //console.log(response);
-}, 'html');
-console.log(page_accueil);
 
 window.onload=function()
 {
