@@ -64,8 +64,8 @@
 					</ul>
 				</div>
 				<div class="gitbuttondiv">
-				<form action="http://google.com">
-					<input class="githubbutton" type="submit" value="Fork on Github" />
+				<form action="https://github.com/simplon-sofianeD/animustransismus/">
+					<button class="githubbutton" type="submit"><i class="fa fa-code-fork" aria-hidden="true"></i> us on Github</button>
 				</form>
 				</div>
 			</div>

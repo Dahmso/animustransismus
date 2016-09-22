@@ -69,7 +69,7 @@ $index = true;
 		<div id="contenu"></div>
 	</div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+<script src="./lib/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="ace_init.js"></script>
 <script type="text/javascript">
 ;(function(alias){
@@ -77,7 +77,7 @@ $index = true;
 var toggleButton = {
 
   color:["white", "rgb(77, 77, 77)"],
-  status: false,
+  status: true,
   selectdiv:"",
   sidebar: function() {
       this.selectdiv = document.querySelector(".sidebar");
@@ -121,9 +121,9 @@ document.querySelector("#active_menu").addEventListener("click", toggleButton.cl
 function changePage(param_url, param_load=null){
 	var urlInSearchBar = window.location.pathname.replace('/', '');
 	var $frame = $('#frame');
-	// console.log('param_url : ', param_url);
+	//console.log('param_url : ', param_url);
 	var url = param_url.replace('/', '')
-	// console.log('url : ', url)
+	console.log('url : ', url)
 	if ( urlInSearchBar === url && param_load === null) { console.log('Equivalent : ', urlInSearchBar + ' = ' + url); return false}
 	switch(url){
 
@@ -134,6 +134,8 @@ function changePage(param_url, param_load=null){
 		case'accueil':
 			document.getElementById('frame').innerHTML = "";
 			$frame.attr('data-init', url)
+			$frame.fadeOut();
+			$('#contenu').fadeIn();
 			changeUrl('', url);
       displayContentHeader("accueil");
 		break;
@@ -141,6 +143,8 @@ function changePage(param_url, param_load=null){
 		case'atelier':
 			$frame.load('src/atelier/index.php');
 			$frame.attr('data-init', url)
+			$frame.fadeIn();
+			$('#contenu').fadeOut();
 			changeUrl(url.toUpperCase(), url)
       displayContentHeader("atelier");
 		break;
@@ -148,6 +152,8 @@ function changePage(param_url, param_load=null){
 		case'animation':
 			$frame.load('src/animation/index.php');
 			$frame.attr('data-init', url)
+			$frame.fadeIn();
+			$('#contenu').fadeOut();
 			changeUrl(url.toUpperCase(), url)
       displayContentHeader("animation");
 		break;
@@ -155,36 +161,65 @@ function changePage(param_url, param_load=null){
 		case'transition':
 			$frame.load('src/transition/index.php');
 			$frame.attr('data-init', url)
+			$frame.fadeIn();
+			$('#contenu').fadeOut();
 			changeUrl(url.toUpperCase(), url)
       displayContentHeader("transition");
+		break;
+
+		case'transformation':
+			$frame.load('src/transformation/index.php');
+			$frame.attr('data-init', url)
+			$frame.fadeIn();
+			$('#contenu').fadeOut();
+			changeUrl(url.toUpperCase(), url)
+      displayContentHeader("transformation");
 		break;
 
 		case'annexe':
 			$frame.load('src/annexe/index.php');
 			$frame.attr('data-init', url)
+			$frame.fadeIn();
+			$('#contenu').fadeOut();
 			changeUrl(url.toUpperCase(), url)
+      displayContentHeader("annexe");
 		break;
 
 		default:
 			// console.log('Switch: Default ', url)
 	}
 }
-function displayContentHeader() {
+function displayContentHeader(elem) {
+  var screenWidth = window.innerWidth;
   var contentHeader = document.querySelector('.content_header');
   var moon = document.querySelector('.moon');
   var cloudsWrapper = document.querySelector('.clouds-wrapper');
   var contentMountains = document.querySelector('.content_mountains');
-  if ("accueil") {
+  if (screenWidth <= 700) {
   contentHeader.style.display = "none";
-  } if ("atelier") {
-    contentHeader.style.display = "block";
-    } if ("animation") {
+  } else {
+  if (elem === "accueil" || elem === "annexe") {
+  contentHeader.style.display = "none";
+  }
+  if (elem === "atelier") {
       contentHeader.style.display = "block";
-      } if ("transition") {
-        contentHeader.style.display = "block";
-      } if ("annexe") {
-        contentHeader.style.display = "block";
-          }
+      moon.style.display = "block";
+      contentMountains.style.display = "block";
+      cloudsWrapper.style.display = "block";
+  }
+  if (elem === "animation") {
+    contentHeader.style.display = "block";
+    contentHeader.style.height = "20vh";
+    moon.style.display = "block";
+    contentMountains.style.display = "none";
+  }
+  if (elem === "transition") {
+    contentHeader.style.display = "block";
+    moon.style.display = "block";
+    contentMountains.style.display = "block";
+    cloudsWrapper.style.display = "none";
+  }
+}
 }
 function changeUrl(title, url) {
     if (typeof (history.pushState) != "undefined") {
@@ -235,7 +270,7 @@ function chargerPage(param_page){
     });
 }
 var pageTransition = chargerPage('transition');
-console.log(pageTransition);
+//console.log(pageTransition);
 function loader(sec){
 	var load = document.getElementById('load');
 	load.style.display = "block";
@@ -243,38 +278,24 @@ function loader(sec){
 	setTimeout(function(){load.style.opacity = "0";}, sec + '000');
 	setTimeout(function(){load.style.display = "none"; load.remove();}, sec + '100');
 }
+function Anchor(){
+	this.lists = new Array();
 
-/*
-	function findPos(obj){
-	    var curleft = curtop = 0;
-	    if (obj.offsetParent) {
-	        curleft = obj.offsetLeft
-	        curtop = obj.offsetTop
-	        while (obj = obj.offsetParent) {
-	            curleft += obj.offsetLeft
-	            curtop += obj.offsetTop
-	        }
-	    }
-	    return [curtop, curleft];
+	this.setAnchor = function(param_anchors){
+		for (var i = param_anchors.length - 1; i >= 0; i--) {
+			this.lists.push(param_anchors[i])
+		}
 	}
-	function createFrame(posTop, postLeft){
-		var frame = document.createElement("div");
-		var avant = document.getElementById("load");
-			document.body.insertBefore(frame, avant);
-			frame.setAttribute('id', 'frame');
-			frame.style.display = 'block';
-			frame.style.opacity = '0,5';
-			frame.style.top = posTop + 'px';
-			frame.style.left = postLeft + 'px';
+	this.getAnchors = function(){
+		return this.lists;
 	}
-*/
+}
 
 loader('2')
 
 var CheminComplet	= document.location.href;
 var NomDuFichier	= CheminComplet.substring(CheminComplet.lastIndexOf( "/" )+1 );
 var urlOnLoad 			= NomDuFichier.replace('?page=', "");
-//console.log(urlOnLoad)
 setInterval(verifPage, 1000)
 
 window.onload=function()
@@ -283,20 +304,26 @@ window.onload=function()
 	changePage(urlOnLoad, true);
 
 	setTimeout(function(){
-		var anchors = document.querySelectorAll('.leftbar a');
-		console.log(anchors);
-		for (var i = 0; i < anchors.length - 1; i++) {
-				anchors[i].addEventListener('click', function(e){
-					e.preventDefault();
-					var target = e.toElement;
-					while (target.getAttribute('href') === null) {
-						target = target.parentNode;
-						console.log('target attr = ', target.getAttribute('href'));
-					}
-					console.log('var target = ', target);
-					window.target = target.getAttribute('href');
-					changePage(target.getAttribute('href'));
-				});
+		var anchors = new Anchor();
+		anchors.setAnchor(document.querySelectorAll('.leftbar a'));
+		anchors.setAnchor(document.querySelectorAll('.listbar a'));
+		anchors.setAnchor(document.querySelectorAll('.row_circle a'));
+		anchors.setAnchor(document.querySelectorAll('.section a'));
+		var allAnchors = anchors.getAnchors();
+		console.log(allAnchors);
+		for (var i = 0; i < allAnchors.length; i++) {
+			allAnchors[i].addEventListener('click', function(e){
+				//console.log('clic');
+				e.preventDefault();
+				var target = e.toElement;
+				while (target.getAttribute('href') === null) {
+					target = target.parentNode;
+					console.log('target attr = ', target.getAttribute('href'));
+				}
+				//console.log('var target = ', target);
+				window.target = target.getAttribute('href');
+				changePage(target.getAttribute('href'));
+			});
 		}
 	}, 100)
 }

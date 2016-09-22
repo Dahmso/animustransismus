@@ -1,0 +1,81 @@
+body {
+	background-color: #120227;
+	font-family: helvetica;
+	margin: 0;
+}
+
+header {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+header img {
+	width: 60%;
+	margin: auto;
+}
+
+.content {
+	width: 80%;
+	margin:auto;
+	margin-top: 20px;
+
+}
+
+.mdl-grid {
+	position: relative;
+	width: 80%;
+	margin: auto;
+	text-align:center;
+}
+
+.animatable {
+	background: url('animatable.svg') center no-repeat;
+}
+
+.envato {
+	background: url('envato.png') center no-repeat;
+}
+
+.solar_system {
+	background: url('solar_system.png') center no-repeat;
+}
+
+.border {
+	background: url('border.svg') center no-repeat;
+}
+
+.rachel_cope {
+	background: url('robots.png') center no-repeat;
+}
+
+.cubic_bezier {
+	background: url('cubic_bezier.svg') center no-repeat;
+}
+
+.card-wide.mdl-card {
+  height: 320px;
+  display: inline-block;
+  margin: auto;
+}
+
+.mdl-card__title {
+color: #fff;
+height: 176px;
+}
+
+.mdl-card__menu {
+color: #fff;
+}
+
+.card-square.mdl-card {
+  height: 320px;
+  margin: auto;
+  display: inline-block;
+}
+.card-square > .mdl-card__title {
+  color: #fff;
+}
+
