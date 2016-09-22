@@ -248,73 +248,7 @@ function verifPage(){
 		}
 	}
 }
-function chargerPage(param_page){
-	var src = 'src/' + param_page + 'index.php';
-	$.ajax({
-       url : 'more_com.php',
-       type : 'GET',
-       dataType : 'html',
-       success : function(code_html, statut){
-        //console.log(statut);
-        return code_html;
-       },
 
-       error : function(resultat, statut, erreur){
-        console.log(statut);
-       },
-
-       complete : function(resultat, statut){
-       	//console.log(statut);
-       	//console.log(resultat);
-       }
-    });
-}
-function appelAJAX(methode, www, parametre=null){
-
-	// Creation de l'instance XHR 
-	// - 0 : L'objet XHR a été créé, mais pas encore initialisé (la méthode open n'a pas encore été appelée)
-	var xhr = new XMLHttpRequest();
-	// URL de destinattion
-	var url = www;
-	if (parametre !== null) {
-		// Parametre envoyer (ex: url.php?var=1&var=2)
-		var params = parametre;
-	}
-	// Objet initialisé
-	xhr.open(methode, url, true);
-
-	//Si vous utilisez la méthode POST, vous devez absolument changer le type MIME de la requête avec la méthode setRequestHeader , sinon le serveur ignorera la requête :
-	if (methode == "POST") {
-		xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-	}	
-
-	xhr.onreadystatechange = function() {// Appel de la fonction au changement d'état de l'appel Ajax
-		/*
-		Il faut savoir que quand on envoie une requête HTTP via XMLHttpRequest, celle-ci passe par plusieurs états différents :
-
-		0 : L'objet XHR a été créé, mais pas encore initialisé (la méthode open n'a pas encore été appelée)
-		1 : L'objet XHR a été créé, mais pas encore envoyé (avec la méthode send )
-		2 : La méthode send vient d'être appelée
-		3 : Le serveur traite les informations et a commencé à renvoyer des données
-		4 : Le serveur a fini son travail, et toutes les données sont réceptionnées
-		*/
-	    if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
-				if (xhr.responseText.length > 0) {
-					return xhr.response;
-				}
-			} else if (xhr.readyState < 4) {
-				//console.log('erreur AJAX')
-			}
-	}
-	// Envoi des parametre 
-	if (methode == "POST") {
-		xhr.send(params);
-	} else {
-		xhr.send(null);
-	}
-};
-var pageTransition = appelAJAX('GET', './src/transition/index.php');
-console.log(pageTransition);
 function loader(sec){
 	var load = document.getElementById('load');
 	load.style.display = "block";
@@ -341,6 +275,13 @@ var CheminComplet	= document.location.href;
 var NomDuFichier	= CheminComplet.substring(CheminComplet.lastIndexOf( "/" )+1 );
 var urlOnLoad 			= NomDuFichier.replace('?page=', "");
 setInterval(verifPage, 500)
+
+var page_accueil = "";
+$.get("page-accueil.php", function(response) {
+    page_accueil += response;
+    //console.log(response);
+}, 'html');
+console.log(page_accueil);
 
 window.onload=function()
 {
