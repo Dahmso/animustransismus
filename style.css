@@ -20,9 +20,9 @@ body {
 .page {
     position: relative;
     display: inline-block;
-    width: 80%;
     text-align: center;
     margin: auto;
+    width: 100%;
 }
 
 .row_circle {

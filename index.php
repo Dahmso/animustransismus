@@ -121,9 +121,9 @@ document.querySelector("#active_menu").addEventListener("click", toggleButton.cl
 function changePage(param_url, param_load=null){
 	var urlInSearchBar = window.location.pathname.replace('/', '');
 	var $frame = $('#frame');
-	// console.log('param_url : ', param_url);
+	//console.log('param_url : ', param_url);
 	var url = param_url.replace('/', '')
-	// console.log('url : ', url)
+	console.log('url : ', url)
 	if ( urlInSearchBar === url && param_load === null) { console.log('Equivalent : ', urlInSearchBar + ' = ' + url); return false}
 	switch(url){
 
@@ -165,6 +165,15 @@ function changePage(param_url, param_load=null){
 			$('#contenu').fadeOut();
 			changeUrl(url.toUpperCase(), url)
       displayContentHeader("transition");
+		break;
+
+		case'transformation':
+			$frame.load('src/transformation/index.php');
+			$frame.attr('data-init', url)
+			$frame.fadeIn();
+			$('#contenu').fadeOut();
+			changeUrl(url.toUpperCase(), url)
+      displayContentHeader("transformation");
 		break;
 
 		case'annexe':
@@ -304,14 +313,14 @@ window.onload=function()
 		console.log(allAnchors);
 		for (var i = 0; i < allAnchors.length; i++) {
 			allAnchors[i].addEventListener('click', function(e){
-				console.log('clic');
+				//console.log('clic');
 				e.preventDefault();
 				var target = e.toElement;
 				while (target.getAttribute('href') === null) {
 					target = target.parentNode;
 					console.log('target attr = ', target.getAttribute('href'));
 				}
-				console.log('var target = ', target);
+				//console.log('var target = ', target);
 				window.target = target.getAttribute('href');
 				changePage(target.getAttribute('href'));
 			});
