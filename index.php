@@ -203,21 +203,21 @@ function displayContentHeader(elem) {
   }
   if (elem === "atelier") {
       contentHeader.style.display = "block";
-      moon.style.visibility = "visible";
-      contentMountains.style.visibility = "visible";
-      cloudsWrapper.style.visibility = "visible";
+      moon.style.display = "block";
+      contentMountains.style.display = "block";
+      cloudsWrapper.style.display = "block";
   }
   if (elem === "animation") {
     contentHeader.style.display = "block";
     contentHeader.style.height = "20vh";
-    moon.style.visibility = "visible";
-    contentMountains.style.visibility = "visible";
+    moon.style.display = "block";
+    contentMountains.style.display = "none";
   }
   if (elem === "transition") {
     contentHeader.style.display = "block";
-    moon.style.visibility = "hidden";
-    contentMountains.style.visibility = "visible";
-    cloudsWrapper.style.visibility = "hidden";
+    moon.style.display = "block";
+    contentMountains.style.display = "block";
+    cloudsWrapper.style.display = "none";
   }
 }
 }

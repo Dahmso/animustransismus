@@ -619,9 +619,7 @@ a {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
-.page {
-	margin: auto;
-}
+
 #active_menu ,.sidebar {
   display: none;
 }
