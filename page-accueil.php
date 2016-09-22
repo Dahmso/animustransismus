@@ -71,18 +71,18 @@
 	  color: ["white"],
 	  addKeyframe: function () {
 	    var size;
-	    var screenSize = (window.innerWidth / 100) * 40;
-	    var screenHeight = window.innerHeight;
-	    //console.log(screenHeight);
+	    var divWidth = document.querySelector(".section_left").offsetWidth;
+	    var divHeight = document.querySelector(".section_left").offsetHeight;
+	    console.log("width :",divWidth, "height :", divHeight);
 	    var randomSize = function () {
-	      size = Math.floor((Math.random() * 20) + 4);
+	      size = Math.floor((Math.random() * 10) + 4);
 	      return size;
 	    }
 	    var randomHeight = function () {
-	      return Math.floor(Math.random() * 200);
+	      return Math.floor((Math.random() * divHeight)) ;
 	    };
 	    var randomTranslate = function () {
-	      return Math.floor(Math.random() * screenSize);
+	      return Math.floor(Math.random() * divWidth);
 	    };
 	    var randomAnimDuration = function () {
 	      return Math.floor(Math.random() * 5000);

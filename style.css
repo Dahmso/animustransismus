@@ -40,14 +40,11 @@ body {
 
 .section_circle {
   width: 33.33333333%;
-  padding: 35px;
-  /*animation-name: jump;
-  animation-duration: 3s;*/
   z-index: 11;
   float: left;
+  margin-top: 2vh;
   text-align: center;
   line-height: 200px;
-  /*height: 100%;*/
 }
 
 .box_circle {
@@ -143,7 +140,6 @@ overflow: hidden;
 }
 
 .ball {
-    top: 35%;
     animation-direction:alternate-reverse;
     border-radius: 6px;
     animation-duration: 60s;
@@ -167,7 +163,6 @@ overflow: hidden;
     vertical-align: center;
     margin-bottom: 2%;
     margin-top: 29vh;
-    padding: 5% 0% 0% 0%;
     z-index: 1;
   }
 
@@ -347,4 +342,13 @@ footer {
   top: -70px;
   left: 230px;
   opacity: 0.8;
+}
+@media (max-width: 1150px) {
+
+}
+@media (max-width: 763px) {
+   .circle {
+    height: 150px;
+    width: 150px;
+  }
 }
