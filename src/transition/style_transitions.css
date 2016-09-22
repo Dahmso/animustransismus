@@ -1,0 +1,272 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#title {
+    display: inline-block;
+    height: 50%;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#title1 {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(45, 173, 173, 0.48);
+    color: white;
+    width: 20%;
+    height: 5%;
+}
+
+#title2 {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(45, 173, 173, 0.48);
+    color: white;
+    width: 41%;
+    height: 5%;
+}
+
+#title3 {
+    margin: none;
+    padding: 0;
+    background-color: rgba(45, 173, 173, 0.48);
+    color: white;
+    width: 25%;
+    height: 5%;
+}
+
+h1 {
+    margin-top: .2vw;
+    color: white;
+    font-size: 2em;
+    margin-left: 5vw;
+}
+
+.content {
+    margin-left: 5vw;
+    margin-bottom: 5vw;
+    display: inline-block;
+    width: 27%;
+    height: 197px;
+    background-color: #e2e2e2;
+    border-radius: 3%;
+}
+
+.square {
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    margin-top: 5%;
+    background-color: rgba(45, 173, 173, 0.48);
+}
+
+.square:hover {
+    background: #7FFFD4;
+}
+
+.nom_transition {
+    margin: auto;
+    margin-top: 3%;
+    text-align: center;
+    font-size: 1em;
+}
+
+.nom_transition p {
+    color: #2dadad;
+    margin: 0;
+}
+
+.button {
+    margin: 0 auto;
+    margin-top: 7%;
+    margin-bottom: 2%;
+    border: 1px solid darkgray;
+    width: 30%;
+    height: 15%;
+    text-align: center;
+    font-size: 1em;
+    border-radius: 3px;
+}
+
+.button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: darkgray;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.button a:hover {
+    background-color: #2dadad;
+    color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#fondu:hover {
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transitions: all 0.5s ease-in;
+}
+
+#deplacement {
+    transition-property: top;
+    -webkit-transition-property: top;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+    top: 0;
+    position: relative;
+}
+
+#deplacement:hover {
+    top: 22px;
+}
+
+#rotate {
+    transition-property: transform, width, height, top;
+    -webkit-transition-property: transform, width, height, top;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+}
+
+#rotate:hover {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    top: 20px;
+}
+
+#zoom {
+    transition-property: transform;
+    -webkit-transition-property: transform;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+}
+
+#zoom:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+#deformation {
+    transition: transform 0.5s ease-out;
+    -webkit-transition: transform 0.5s ease-out;
+}
+
+#deformation:hover {
+    transform: skew(45deg);
+    -webkit-transform: skew(45deg);
+}
+
+#opacity:hover {
+    opacity: 0.8;
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-in;
+}
+
+#width {
+    transition: width 0.5s ease-out;
+    -webkit-transition: width 0.5s ease-out;
+}
+
+#width:hover {
+    width: 80%;
+}
+
+#delay {
+    transition: width 0.6s ease-in 0.4s;
+    -webkit-transition: width 0.6s ease-in 0.4s;
+}
+
+#delay:hover {
+    width: 80%;
+}
+
+#linear {
+    transition: background 1s .5s linear;
+}
+
+#ease {
+    -webkit-transition: all .6s ease-in;
+    -moz-transition: all .6s ease-in;
+    -o-transition: all .6s ease-in;
+    transition: all .6s ease-in;
+}
+
+#step {
+    -webkit-transition-timing-function: steps(4, start);
+    -moz-transition-timing-function: steps(4, start);
+    -o-transition-timing-function: steps(4, start);
+    transition-timing-function: steps(4, start);
+}
+
+#step:hover {
+    background-color: #7FFFD4;
+}
+
+.changementcouleur {
+    -webkit-transition-duration: 5s;
+    -moz-transition-duration: 5s;
+    -o-transition-duration: 5s;
+    transition-duration: 5s;
+    -webkit-transition-property: background-color;
+    -moz-transition-property: background-color;
+    -o-transition-property: background-color;
+    transition-property: background-color;
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 30px;
+    text-align: center;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #CCCCCC
+}
+
+button {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    background: lightcoral;
+    border: 0;
+    border-radius: 4px;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer
+}
+
+.popup {
+    background: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    display: none;
+    z-index: 5000;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0
+}
+
+.popup>div {
+    border-radius: 4px;
+    position: fixed;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 12px #666666;
+    padding: 30px 15px;
+    width: 80%;
+    max-width: 600px;
+    z-index: 5001;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    text-align: center
+}
