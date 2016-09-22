@@ -10,6 +10,12 @@
     margin: 15px;
     padding-top: 10px;
 }
+.click-btn{
+    border: 1px solid silver;
+    width: 90px;
+    margin: 7px auto;
+    border-radius: 5px;
+}
 .ctn-demo [class^="col-"] {
     margin-bottom: 20px;
 }
@@ -21,7 +27,7 @@
 }
 .element:hover {
     cursor: pointer;
-    background: #008ed6;
+    background: #31cea9;
 }
 .img-circle {
 		border-radius: 50%
@@ -97,6 +103,7 @@ h1 {
     font-size: 30px;
     text-align: center;
 }
+
 .page ul {
     list-style-type: none;
     border-radius: 6%;
