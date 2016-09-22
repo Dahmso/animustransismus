@@ -303,18 +303,18 @@ window.onload=function()
 		var allAnchors = anchors.getAnchors();
 		console.log(allAnchors);
 		for (var i = 0; i < allAnchors.length; i++) {
-				allAnchors[i].addEventListener('click', function(e){
-					console.log('clic');
-					e.preventDefault();
-					var target = e.toElement;
-					while (target.getAttribute('href') === null) {
-						target = target.parentNode;
-						console.log('target attr = ', target.getAttribute('href'));
-					}
-					console.log('var target = ', target);
-					window.target = target.getAttribute('href');
-					changePage(target.getAttribute('href'));
-				});
+			allAnchors[i].addEventListener('click', function(e){
+				console.log('clic');
+				e.preventDefault();
+				var target = e.toElement;
+				while (target.getAttribute('href') === null) {
+					target = target.parentNode;
+					console.log('target attr = ', target.getAttribute('href'));
+				}
+				console.log('var target = ', target);
+				window.target = target.getAttribute('href');
+				changePage(target.getAttribute('href'));
+			});
 		}
 	}, 100)
 }
