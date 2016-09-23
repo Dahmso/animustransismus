@@ -20,7 +20,7 @@
           <!-- lightbox container hidden with CSS -->
           <div class="lightbox" id="text1">
             <div class="box">
-              <a class="close" href="#">X</a>
+              <a class="close" href="#bounce" onclick="ouvrir(this.href); return false">X</a>
               <p class="title">Animated bounce</p>
               <div class="bloc">
                 <h2>Syntaxe</h2>
@@ -55,7 +55,7 @@
           <!-- lightbox container hidden with CSS -->
           <div class="lightbox" id="text2">
             <div class="box">
-              <a class="close" href="#">X</a>
+              <a class="close"  href="#flash" onclick="ouvrir(this.href); return false">X</a>
               <p class="title">Animated flash</p>
               <div class="bloc">
                 <h2>Syntaxe</h2>
@@ -91,7 +91,7 @@
           <!-- lightbox container hidden with CSS -->
           <div class="lightbox" id="text3">
             <div class="box">
-              <a class="close" href="#">X</a>
+              <a class="close"  href="#pulse" onclick="ouvrir(this.href); return false">X</a>
               <p class="title">Animated pulse</p>
               <div class="bloc">
                 <h2>Syntaxe</h2>
@@ -136,7 +136,7 @@
           <!-- lightbox container hidden with CSS -->
           <div class="lightbox" id="text4">
             <div class="box">
-              <a class="close" href="#">X</a>
+              <a class="close"  href="#rubberBand" onclick="ouvrir(this.href); return false">X</a>
               <p class="title">Animated rubberBand</p>
               <div class="bloc">
                 <h2>Syntaxe</h2>
@@ -194,7 +194,7 @@
           <!-- lightbox container hidden with CSS -->
           <div class="lightbox" id="text5">
             <div class="box">
-              <a class="close" href="#">X</a>
+              <a class="close"  href="#shake" onclick="ouvrir(this.href); return false">X</a>
               <p class="title">Animated shake</p>
               <div class="bloc">
                 <h2>Syntaxe</h2>
@@ -236,7 +236,7 @@
           <!-- lightbox container hidden with CSS -->
           <div class="lightbox" id="text9">
             <div class="box">
-              <a class="close" href="#">X</a>
+              <a class="close"  href="#jello" onclick="ouvrir(this.href); return false">X</a>
               <p class="title">Animated jello</p>
               <div class="bloc">
                 <h2>Syntaxe</h2>
@@ -303,7 +303,7 @@
           <!-- lightbox container hidden with CSS -->
           <div class="lightbox" id="text7">
             <div class="box">
-              <a class="close" href="#">X</a>
+              <a class="close"  href="#tada" onclick="ouvrir(this.href); return false">X</a>
               <p class="title">Animated tada</p>
               <div class="bloc">
                 <h2>Syntaxe</h2>
@@ -353,7 +353,7 @@
           <!-- lightbox container hidden with CSS -->
           <div class="lightbox" id="text8">
             <div class="box">
-              <a class="close" href="#">X</a>
+              <a class="close"  href="#wobble" onclick="ouvrir(this.href); return false">X</a>
               <p class="title">Animated wobble</p>
               <div class="bloc">
                 <h2>Syntaxe</h2>
@@ -411,7 +411,7 @@
           <!-- lightbox container hidden with CSS -->
           <div class="lightbox" id="text6">
             <div class="box">
-              <a class="close" href="#">X</a>
+              <a class="close"  href="#swing" onclick="ouvrir(this.href); return false">X</a>
               <p class="title">Animated swing</p>
               <div class="bloc">
                 <h2>Syntaxe</h2>
