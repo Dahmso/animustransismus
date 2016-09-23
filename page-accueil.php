@@ -3,21 +3,21 @@
 
 	   <div class="section_circle">
 	   		<a href="transition/" class="box_circle">
-		     	<div class="circle color1"></div>
+		     	<div class="circle" id="color1"></div>
 		     	<span>Transitions</span>
 		     </a>
 		</div>
 
 	   <div class="section_circle">
 		    <a href="animation/" class="box_circle">
-		     	<div class="circle color2"></div>
+		     	<div class="circle" id="color2"></div>
 		     	<span>Animations</span>
 		     </a>
 		</div>
 
 	   <div class="section_circle">
 		    <a href="transformation/" class="box_circle">
-		     	<div class="circle color3"></div>
+		     	<div class="circle" id="color3"></div>
 		     	<span>Transformations</span>
 		     </a>
 		</div>
