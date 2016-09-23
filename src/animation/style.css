@@ -1,3 +1,4 @@
+
 .ctn-demo {
     margin-top: 80px
 }
@@ -15,6 +16,12 @@
     width: 90px;
     margin: 7px auto;
     border-radius: 5px;
+}
+.click-btn-rb{
+  border: 1px solid silver;
+  width: 120px;
+  margin: 7px auto;
+  border-radius: 5px;
 }
 .ctn-demo [class^="col-"] {
     margin-bottom: 20px;
@@ -42,7 +49,6 @@
     padding-left: 15px;
     padding-right: 15px
 }
-
 
 .col-md-12, .col-md-4{
     position: relative;
@@ -126,12 +132,14 @@ a {
     top: 0vh;
     left: 0;
     color: #333333;
+    overflow: auto;
 }
 .lightbox:target {
     /** Show lightbox when it is target */
     display: block;
     outline: none;
 }
+
 .lightbox .box {
     width: -webkit-min-content;
     width: -moz-min-content;
@@ -162,6 +170,12 @@ a {
     font-size: 22px;
     color: #858585;
 }
+pre.line-numbers {
+    position: relative;
+    padding-left: 0;
+    counter-reset: linenumber;
+}
+
 
 /*****************animations******************************************/
 
