@@ -10,6 +10,7 @@ body {
 }
 
 .page {
+	margin: auto;
 	padding: 30px 15px;
 	max-width: 700px;
 }
