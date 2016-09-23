@@ -1,0 +1,29 @@
+@media screen and (max-width: 600px) {
+    body {
+        display: block;
+        clear: both;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .square {
+        margin: 0 auto;
+        width: 80px;
+        height: 80px;
+        margin-top: 5%;
+        background-color: rgba(45, 173, 173, 0.48);
+        margin-bottom: 50%;
+        margin-left: 11%;
+    }
+    .nom_transition {
+        margin: auto;
+        margin-top: 6%;
+        text-align: center;
+        font-size: 1.15em;
+        font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-variant: small-caps;
+        font-weight: bold;
+    }
+}
