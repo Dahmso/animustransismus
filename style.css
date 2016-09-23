@@ -118,7 +118,7 @@ body {
 
 .section {
 width: 100%;
-height: 38vh;
+height: 50vh;
 position: relative;
 display: inline-block;
 overflow: hidden;
@@ -148,7 +148,7 @@ overflow: hidden;
 
 .atelier {
   margin: auto;
-  margin-top: 14vh;
+  margin-top: 20vh;
 }
 
 .atelier h2 {
@@ -380,10 +380,6 @@ footer {
     .atelier {
       margin-top: 4vh;
     }
-    .section {
-      height: 40vh;
-    }
-
     .row_circle {
       padding: 0;
       width: 100%;
