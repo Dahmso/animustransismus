@@ -1,4 +1,4 @@
-<div class="page" style="width: 80%;">
+<div class="page">
 	<div class="row_circle">
 
 	   <div class="section_circle">

@@ -432,7 +432,7 @@ header {
 .content_mountains  {
   text-align: center;
   margin: auto;
-  margin-left: 19vw;
+  margin-left: 12vw;
   z-index: 12;
 }
 .content_header {
@@ -618,17 +618,6 @@ a {
 
 #active_menu ,.sidebar {
   display: none;
-}
-
-@media (max-width: 600px) {
-  .content_mountains  {
-    margin-left: 0vw;
-  }
-}
-@media (max-width: 700px) {
-  .content_mountains  {
-    margin-left: 0vw;
-  }
 }
 
 @media (max-width: 992px) {

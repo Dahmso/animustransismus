@@ -42,11 +42,11 @@ $index = true;
 			<div class="exercice">
 				<form>
 					<div id="html" class="col-6">
-					<span class="lg" style="margin-left: 40px;">HTML</span>
+					<span class="lg">HTML</span>
 						<textarea id="editor_html"></textarea>
 					</div>
 					<div id="css" class="col-6">
-					<span class="lg" style="margin-left: 47px;">CSS</span>
+					<span class="lg">CSS</span>
 					<textarea id="editor_css"></textarea>
 					</div>
 					<p id="mfs">Pressez F11 pour afficher le code en plein ecran</p>
