@@ -53,6 +53,7 @@ body {
   position: relative;
   display: flex;
   height: 100%;
+  width: 50%;
 }
 
 
@@ -147,7 +148,7 @@ overflow: hidden;
 
 .atelier {
   margin: auto;
-  margin-top: 11vh;
+  margin-top: 14vh;
 }
 
 .atelier h2 {
@@ -225,7 +226,6 @@ overflow: hidden;
   float: left;
 
 }
-
 .tutoriel {
   width: 100%;
   height: 50%;
@@ -344,43 +344,50 @@ footer {
     .page {
       width: 100%;
     }
-    .section_circle {
-      width: 28%;
-      margin: 1em;
+    .section {
+      overflow: visible;
+      padding: 1em;
     }
-    .box_circle {
-      width: auto;
+    .section_left {
+      height: 50%;
+      margin-bottom: 0.3em;
+    }
+    .section_left, .section_right {
+      width: 100%;
+    }
+    .section_right {
+      height: 100%;
+    }
+    .tutoriel, .reference {
+      height: 50%;
+    }
+    .tutoriel {
+      margin-bottom: 0.3em;
     }
     footer {
       display: none;
     }
-    .circle {
-      border-radius: 0;
-      border-width: 0;
-      border-style: solid;
-      width: 100%;
-      background-color: red;
-      height: 100%;
+    #transfo {
+      display: none;
     }
-    .box_circle {
-      font-size: 1rem;
-      font-weight: bold;
+    .atelier a::before {
+      top: 0.5vh;
     }
     .atelier h2 {
       margin-top: 0;
       font-size: 1.5rem;
     }
     .atelier {
-      margin-top: 13vh;
+      margin-top: 4vh;
     }
     .section {
-      height: 37vh;
+      height: 40vh;
     }
 
     .row_circle {
       padding: 0;
       width: 100%;
-      height: none;
+      height: auto;
       background-image: none;
     }
     #color1 {
