@@ -12,6 +12,9 @@ body {
 	margin: 0px;
 	position: relative;
 }
+.page {
+	width: 100%;
+}
 img {
 	width: 80%;
 	height: auto;
