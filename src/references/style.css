@@ -1,20 +1,29 @@
+header {
+	display: none;
+}
+
 body {
+	background-color: darkcyan;
+}
+
+.menutopbar{
+	background-color: darkcyan;
+}
+
+#frame {
 	background-color: #120227;
 	font-family: helvetica;
 	margin: 0;
+	position: relative;
+	text-align: center;
 }
 
-header {
-    position: relative;
+img {
     margin: auto;
     width: 100%;
     text-align: center;
     margin-top: 50px;
-}
-
-header img {
-	width: 60%;
-	margin: auto;
+    width: 60%;
 }
 
 .content {
@@ -28,31 +37,31 @@ header img {
 	position: relative;
 	width: 80%;
 	margin: auto;
-	text-align:center;
+	t
 }
 
 .animatable {
-	background: url('animatable.svg') center no-repeat;
+	background: url('images/animatable.svg') center no-repeat;
 }
 
 .envato {
-	background: url('envato.png') center no-repeat;
+	background: url('images/envato.png') center no-repeat;
 }
 
 .solar_system {
-	background: url('solar_system.png') center no-repeat;
+	background: url('images/solar_system.png') center no-repeat;
 }
 
 .border {
-	background: url('border.svg') center no-repeat;
+	background: url('images/border.svg') center no-repeat;
 }
 
 .rachel_cope {
-	background: url('robots.png') center no-repeat;
+	background: url('images/robots.png') center no-repeat;
 }
 
 .cubic_bezier {
-	background: url('cubic_bezier.svg') center no-repeat;
+	background: url('images/cubic_bezier.svg') center no-repeat;
 }
 
 .card-wide.mdl-card {
