@@ -1,26 +1,15 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Inspirations CSS</title>
+	<link rel="stylesheet" property="" href="./src/references/style.css" media="screen">
+
 	<!-- MDL -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.deep_orange-teal.min.css" />
-    <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+	<link property="" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link property="" rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.deep_orange-teal.min.css" />
+    <link property="" rel="stylesheet" type="text/css" href="./src/references/style.css">
+	<script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
 
-    <!-- Compatibilité IE < 9-->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
-<header>
-	<img src="logo_references.svg">
-</header>
+
+	<img src="./src/references/images/logo_references.svg">
+
 
 <div class="content">
 
@@ -129,53 +118,5 @@
 			</div>
 		</div>
 	</div>
-<!--
-	<div class="mdl-grid">
-		<div class="card-square mdl-card mdl-card mdl-cell mdl-cell--4-col mdl-cell--8-col- mdl-cell--4-col-phone">
-			<div class="mdl-card__title mdl-card--expand">
-				<h2 class="mdl-card__title-text">Update</h2>
-			</div>
-			<div class="mdl-card__supporting-text">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-			Aenan convallis.
-			</div>
-			<div class="mdl-card__actions mdl-card--border">
-				<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-			  	Go to website
-				</a>
-			</div>
-		</div>
-
-		<div class="card-wide mdl-card mdl-cell mdl-cell--8-col mdl-cell--8-col- mdl-cell--4-col-phone">
-		  <div class="mdl-card__title">
-		    <h2 class="mdl-card__title-text">Rachel Cope</h2>
-		  </div>
-		  <div class="mdl-card__supporting-text">
-		    CSS Transitions and Transforms for Beginners
-		  </div>
-		  <div class="mdl-card__actions mdl-card--border">
-		    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://robots.thoughtbot.com/transitions-and-transforms">
-		      Go to website
-		    </a>
-		  </div>
-		  <div class="mdl-card__menu">
-		    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-		      <i class="material-icons">share</i>
-		    </button>
-		  </div>
-		</div>
-	</div>
--->
-	<div class="mdl-grid">
-		<div class="section_other_links">
-			<span>Et aussi</span>
-			<span>MDN</span>
-			<span>Alsacreations</span>
-			<span>Projet de groupe de la promo 1 / Simplon Lyon</span>
-		</div>
-	</div>
 
 </div>
-
-</body>
-</html>

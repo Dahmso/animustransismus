@@ -1,26 +1,28 @@
+
 <div class="page">
 	<div class="row_circle">
 
-	   <div class="section_circle">
+	   <!--<div class="section_circle">-->
 	   		<a href="transition/" class="box_circle">
-		     	<div class="circle" id="color1"></div>
+		     	<div class="circle" id="color1">
+		     	</div>
 		     	<span>Transitions</span>
 		     </a>
-		</div>
+		<!--</div>-->
 
-	   <div class="section_circle">
+	   <!--<div class="section_circle">-->
 		    <a href="animation/" class="box_circle">
 		     	<div class="circle" id="color2"></div>
 		     	<span>Animations</span>
 		     </a>
-		</div>
+		<!--</div>-->
 
-	   <div class="section_circle" id="transfo">
-		    <a href="transformation/" class="box_circle">
+	   <!--<div class="section_circle">-->
+		    <a href="transformation/" class="box_circle" id="transfo">
 		     	<div class="circle" id="color3"></div>
 		     	<span>Transformations</span>
 		     </a>
-		</div>
+		<!--</div>-->
 	</div>
 
 	  <div class="section">
@@ -57,6 +59,7 @@
 
 	</footer>
 	</div>
+
 	<!-- END PAGE -->
 
 

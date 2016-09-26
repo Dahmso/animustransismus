@@ -1,7 +1,3 @@
-<?php
-$index = true;
- ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>

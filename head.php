@@ -26,7 +26,7 @@
 						<h3><i class="fa fa-book fa-2x" aria-hidden="true"></i>Lexique</h3>
 					</li>
 				</a>
-				<a class="lisidebar" href="reference/">
+				<a class="lisidebar" href="references/">
 					<li>
 						<h3><i class="fa fa-book fa-2x" aria-hidden="true"></i>Reference</h3>
 					</li>
@@ -67,7 +67,7 @@
 								<a href="annexe/"><h3>Lexique</h3>	</a>
 							</li>
 							<li class="listbarli">
-								<a href="annexe/"><h3>Références</h3>	</a>
+								<a href="references/"><h3>Références</h3>	</a>
 							</li>
 					</ul>
 				</div>
@@ -81,7 +81,10 @@
 		<div class="logo"><img src="logo.svg"></div>
 		<div class="content_header">
 		<div class="moon">
-		<div class="sun"></div>
+		<div class="lune">
+			<div class="croissant_lune"></div>
+			<div class="lune_no_visibility"></div>
+		</div>
 		</div>
 			<div class="clouds-wrapper">
 						<ul class="clouds1">

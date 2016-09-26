@@ -124,6 +124,15 @@ function changePage(param_url, param_load=null){
       displayContentHeader("annexe");
 		break;
 
+		case'references':
+			$frame.load('src/references/index.php');
+			$frame.attr('data-init', url)
+			$frame.fadeIn();
+			$('#contenu').fadeOut();
+			changeUrl(url.toUpperCase(), url)
+      displayContentHeader("annexe");
+		break;
+
 		default:
 			// console.log('Switch: Default ', url)
 	}
