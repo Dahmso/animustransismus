@@ -13,9 +13,9 @@ body {
 
 
 
-.clouds-wrapper, .content_mountains, .moon {
-    display: none;
-}
+/*.clouds-wrapper, .content_mountains, .moon {*/
+    /*display: none;*/
+/*}*/
 
 .page {
     position: relative;

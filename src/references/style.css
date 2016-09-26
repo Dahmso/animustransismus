@@ -3,16 +3,28 @@ header {
 }
 
 body {
-	background-color: darkcyan;
+	background-color: #EB594C;
+}
+
+#active_menu span {
+	background: white;
 }
 
 .menutopbar{
-	background-color: darkcyan;
+	background-color: #EB594C;
+}
+
+.topbar {
+	color: white;
+}
+
+.githubbutton {
+	color: white;
+	border: 2px white solid;
 }
 
 #frame {
-	background-color: #120227;
-	font-family: helvetica;
+	background-color: white;
 	margin: 0;
 	position: relative;
 	text-align: center;
@@ -27,18 +39,11 @@ img {
 }
 
 .content {
-	width: 80%;
+	width: 60%;
 	margin:auto;
-	margin-top: 20px;
-
+	/*margin-top: 20px;*/
 }
 
-.mdl-grid {
-	position: relative;
-	width: 80%;
-	margin: auto;
-	t
-}
 
 .animatable {
 	background: url('images/animatable.svg') center no-repeat;
@@ -64,27 +69,44 @@ img {
 	background: url('images/cubic_bezier.svg') center no-repeat;
 }
 
-.card-wide.mdl-card {
-  height: 320px;
-  display: inline-block;
-  margin: auto;
+.content_card {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 300px;
+	padding-top: .5em;
 }
 
-.mdl-card__title {
-color: #fff;
-height: 176px;
+.card_maxi {
+	width: 60%;
+	height: 100%;
+	background-color: white;
 }
 
-.mdl-card__menu {
-color: #fff;
+.card_mini {
+	width: 39%;
+	height: 100%;
+	background-color: white;
 }
 
-.card-square.mdl-card {
-  height: 320px;
-  margin: auto;
-  display: inline-block;
+.card_bg {
+	height:50%;
 }
-.card-square > .mdl-card__title {
-  color: #fff;
+
+.card_title {
+	height:25%;
+}
+
+.card_btn {
+	height: 25%;
+}
+
+.card_btn a {
+	color: white;
+	background-color: #EB594C;
+	border-radius: 3px;
+
+	width: 5em;
 }
 
