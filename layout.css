@@ -527,6 +527,7 @@ header {
   }
 
  #active_menu {
+   position: fixed;
     padding: 20px;
 		display: inline-block;
 		vertical-align: middle;
@@ -592,7 +593,7 @@ a {
 	margin-right: 10px;
 }
 .leftbar ul {
-  padding-top: 20%;
+  padding-top: 10%;
   text-align: left;
   list-style: none;
   padding-left: 0;
