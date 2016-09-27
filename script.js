@@ -58,12 +58,14 @@ var toggleButton = {
 };
 document.querySelector("#active_menu").addEventListener("click", toggleButton.clickButton.bind(toggleButton));
 function changePage(param_url, param_load){
-	var urlInSearchBar = window.location.pathname.replace('/', '');
+	var urlInSearchBar = window.location.pathname.split('/');
+		urlInSearchBar = urlInSearchBar[urlInSearchBar.length - 1];
 	var $frame = $('#frame');
-	//console.log('param_url : ', param_url);
 	var url = param_url.replace('/', '')
-	//console.log('url : ', url)
-	if ( urlInSearchBar === url && param_load == 'undefined') { console.log('Equivalent : ', urlInSearchBar + ' = ' + url); return false}
+	if ( urlInSearchBar === url && param_load == undefined) { 
+		//console.log('Equivalent : ', urlInSearchBar + ' = ' + url); 
+		return false
+	}
 	switch(url){
 
 		case'#':
