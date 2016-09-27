@@ -12,11 +12,6 @@ body {
 }
 
 
-
-/*.clouds-wrapper, .content_mountains, .moon {*/
-    /*display: none;*/
-/*}*/
-
 .page {
     position: relative;
     display: inline-block;
@@ -28,11 +23,11 @@ body {
 .row_circle {
     padding-top: 36px;
     background-image:
-            repeating-linear-gradient(0deg,
-            rgba(0,0,0,0.1) 0px,
-            rgba(0,0,0,0.1) 5px,
-            transparent 5px,
-            transparent 10px);
+    repeating-linear-gradient(0deg,
+    rgba(0,0,0,0.1) 0px,
+    rgba(0,0,0,0.1) 5px,
+    transparent 5px,
+    transparent 10px);
     background-repeat: no-repeat;
     width: 100%;
     display: flex;
@@ -223,11 +218,11 @@ body {
 .tutoriel h2 {
     position: relative;
     width: 100%;
-    height: 60px;
+    height: inherit;
     color: white;
     font-size: 1.4rem;
     margin: auto;
-    line-height: 10vh;
+    line-height: 26vh;
     font-weight: 100;
     z-index: 2;
     overflow: hidden;
@@ -253,7 +248,7 @@ body {
     width: 100%;
     height: 75px;
     position: absolute;
-    top: 60px;
+    top: 24vh;
     left: 0;
     margin:0;
     text-align: center;
@@ -262,11 +257,11 @@ body {
 }
 
 .tutoriel:hover h2::before {
-    top: -75px;
+    top: -24vh;;
 }
 
 .tutoriel:hover h2::after {
-    top: 0px;
+    top: 0vh;
 }
 
 .reference {
@@ -275,9 +270,13 @@ body {
     float: left;
     background-color: #071E3D;
 }
+.reference a {
+  height: 100%;
 
+}
 .reference h2 {
-    line-height: 19vh;
+  line-height: 26vh;
+    height: inherit;
     color: white;
     font-size: 1.4rem;
     margin: 0;
@@ -336,13 +335,6 @@ footer {
     .logo img {
         width: 50%;
     }
-    #active_menu {
-        position: relative;
-        display: block;
-        width: 25%;
-        margin-top: 0;
-    }
-
     .page {
         width: 80%;
         height: 100%;
@@ -407,7 +399,7 @@ footer {
         font-size: 1.5rem;
     }
     .atelier {
-        margin-top: 4vh;
+        margin-top: 8vh;
     }
 
     footer {
@@ -415,7 +407,13 @@ footer {
     }
 
 }
-
+@media (max-width: 1100px){
+  .box_circle {
+  width: 150px;
+  border-radius: 100%;
+  height: 150px;
+}
+}
 @media (max-width: 760px) {
 
     .page {
@@ -445,8 +443,11 @@ footer {
 
     .box_circle {
         width: 100%;
-    }
+        height: 75px;
+        margin-bottom: 20px;
 
+    }
+    
     .box_circle span {
         bottom: 50px;
     }
@@ -472,4 +473,3 @@ footer {
         display: none;
     }
 }
-

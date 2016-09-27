@@ -17,7 +17,6 @@ Yacine :
 Sofiane :
 - sidebar
 - animation
-- transition avec un pseudo element (before, after)
 Nassima :
 - transition simultanée entre plusieurs div chacune des divs comprenant une image photoshop
 -	Squelette de la nouvelle page :

@@ -143,7 +143,7 @@ function displayContentHeader(elem) {
   var moon = document.querySelector('.moon');
   var cloudsWrapper = document.querySelector('.clouds-wrapper');
   var contentMountains = document.querySelector('.content_mountains');
-  if (screenWidth <= 700) {
+  if (screenWidth <= 760) {
   contentHeader.style.display = "none";
   } else {
   if (elem === "accueil" || elem === "annexe") {
