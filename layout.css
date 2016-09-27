@@ -505,16 +505,6 @@ header {
   animation-duration: 2s;
 }
 
-.peak4 {
-	border-left: 150px solid transparent;
-	border-right: 175px solid transparent;
-	border-bottom: 150px solid darkcyan;
-  margin-left: -100px;
-  margin-top: -150px;
-  animation-name: transimountains;
-  animation-duration: 3s;
-  }
-
 .logo img {
     width: 55%;
     height: auto;
@@ -531,11 +521,9 @@ header {
 
  #active_menu {
    position: fixed;
-    padding: 20px;
+    padding: 2vw;
 		display: inline-block;
-		vertical-align: middle;
     z-index: 27;
-    margin: 10px;
   }
 
  #active_menu span  {

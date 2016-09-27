@@ -10,7 +10,6 @@
         <div id="title3" class="title-space">
             <h1>EN CSS</h1></div>
     </div>
-
     <div id="regroupe">
         <div class="content">
             <div class="nom_transition">

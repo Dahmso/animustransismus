@@ -139,29 +139,35 @@ function changePage(param_url, param_load=null){
 }
 function displayContentHeader(elem) {
   var screenWidth = window.innerWidth;
+  var contentHeaderLogo = document.querySelector(".logo");
   var contentHeader = document.querySelector('.content_header');
   var moon = document.querySelector('.moon');
   var cloudsWrapper = document.querySelector('.clouds-wrapper');
   var contentMountains = document.querySelector('.content_mountains');
   if (screenWidth <= 760) {
   contentHeader.style.display = "none";
+  contentHeaderLogo.style.display = "none";
   } else {
   if (elem === "accueil" || elem === "annexe") {
   contentHeader.style.display = "none";
+  contentHeaderLogo.style.display = "block";
+
   }
   if (elem === "atelier") {
+      contentHeaderLogo.style.display = "none";
       contentHeader.style.display = "block";
       moon.style.display = "block";
       contentMountains.style.display = "block";
       cloudsWrapper.style.display = "block";
   }
   if (elem === "animation") {
+    contentHeaderLogo.style.display = "none";
     contentHeader.style.display = "block";
     contentHeader.style.height = "20vh";
     moon.style.display = "block";
-    // contentMountains.style.display = "none";
   }
   if (elem === "transition") {
+    contentHeaderLogo.style.display = "none";
     contentHeader.style.display = "block";
     moon.style.display = "none";
     contentMountains.style.display = "block";

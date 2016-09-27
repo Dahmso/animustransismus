@@ -9,7 +9,8 @@ body {
     display: inline-block;
     height: 50%;
     width: 100%;
-    margin-bottom: 70px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     text-align: center;
 }

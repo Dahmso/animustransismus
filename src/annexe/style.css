@@ -23,8 +23,8 @@ body {
 
 .page {
 	margin: auto;
+  width: 100%;
 	padding: 30px 15px;
-	max-width: 700px;
 }
 .page h1{
 	color : #00998B;

@@ -105,7 +105,6 @@
 				<li class="peak1"></li>
 				<li class="peak2"></li>
 				<li class="peak3"></li>
-				<li class="peak4"></li>
 			</ul>
 		</div>
 	</div>
