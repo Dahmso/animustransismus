@@ -1,202 +1,413 @@
-<link rel="stylesheet" property="" href="./src/transition/style.css" media="screen">
+    <link rel="stylesheet" property="" href="./src/transition/style_transitions.css" media="screen">
+    <link rel="stylesheet" property="" href="./src/transition/screen.css" media="screen">
 
 
-<div class="page">
-  
-    <div id="part1">
-      <h1>Les <i>effets</i> des transitions en CSS</h1>
-
-      <div class="exemple">
-          <a href="#text1" style="text-decoration:none"><h5>Fondu</h5></a>
-          <div class="element img-circle fondu" id="fondu"></div>
-      </div>
-
-      <!-- lightbox container hidden with CSS -->
-      <div id="closing1"></div>
-      <div class="lightbox" id="text1">
-          <div class="box">
-              <a class="close" href="#closing1">x</a>
-              <p class="title">La fonction « FONDU »</p>
-              <div class="content">
-                  <img src="./src/transition/img/fondu.png" alt="code de la transition fondu" />
-              </div>
-          </div>
-      </div>
-
-      <div class="exemple">
-          <a href="#text2" style="text-decoration:none"><h5>Déplacement</h5></a>
-          <div class="element img-circle deplacement" id="deplacement"></div>
-      </div>
-
-      <!-- lightbox container hidden with CSS -->
-      <div id="closing2"></div>
-      <div class="lightbox" id="text2">
-          <div class="box">
-              <a class="close" href="#closing2">x</a>
-              <p class="title">La fonction « D&Eacute;PLACEMENT », <i>ici de haut en bas</i></p>
-              <div class="content">
-                  <img src="./src/transition/img/deplacement.png" alt="code de la transition deplacement" />
-              </div>
-          </div>
-      </div>
-
-      <div class="exemple">
-          <a href="#text3" style="text-decoration:none"><h5>Rotation</h5></a>
-          <div class="element rotate" id="rotate"></div>
-      </div>
-
-      <!-- lightbox container hidden with CSS -->
-      <div id="closing3"></div>
-      <div class="lightbox" id="text3">
-          <div class="box">
-              <a class="close" href="#closing3">x</a>
-              <p class="title">La fonction « ROTATE »</p>
-              <div class="content">
-                  <img src="./src/transition/img/rotate.png" alt="code de la transition rotate" />
-              </div>
-          </div>
-      </div>
-
-      <div class="exemple">
-          <a href="#text4" style="text-decoration:none"><h5>Zoom</h5></a>
-          <div class="element img-circle zoom" id="zoom"></div>
-      </div>
-
-      <!-- lightbox container hidden with CSS -->
-      <div id="closing4"></div>
-      <div class="lightbox" id="text4">
-          <div class="box">
-              <a class="close" href="#closing4">x</a>
-              <p class="title">La fonction « ZOOM »</p>
-              <div class="content">
-                  <img src="./src/transition/img/zoom.png" alt="code de la transition zoom" />
-              </div>
-          </div>
-      </div>
-
-      <div class="exemple">
-          <a href="#text5" style="text-decoration:none"><h5>Déformation</h5></a>
-          <div class="element deformation" id="deformation"></div>
-      </div>
-
-      <!-- lightbox container hidden with CSS -->
-      <div id="closing5"></div>
-      <div class="lightbox" id="text5">
-          <div class="box">
-              <a class="close" href="#closing5">x</a>
-              <p class="title">La fonction « D&Eacute;FORMATION »</p>
-              <div class="content">
-                  <img src="./src/transition/img/deformation.png" alt="code de la transition deformation" />
-              </div>
-          </div>
-      </div>
-
-      <div class="exemple">
-          <a href="#text6" style="text-decoration:none"><h5>Opacité</h5></a>
-          <div class="element img-circle opacity" id="opacity"></div>
-      </div>
-
-      <!-- lightbox container hidden with CSS -->
-      <div id="closing6"></div>
-      <div class="lightbox" id="text6">
-          <div class="box">
-              <a class="close" href="#closing6">x</a>
-              <p class="title">La fonction « OPACITY »</p>
-              <div class="content">
-                  <img src="./src/transition/img/opacity.png" alt="code de la transition opacity" />
-              </div>
-          </div>
-      </div>
-
-      <div class="exemple">
-          <a href="#text7" style="text-decoration:none"><h5>Largeur</h5></a>
-          <div class="element width" id="width"></div>
-      </div>
-
-      <!-- lightbox container hidden with CSS -->
-      <div id="closing7"></div>
-      <div class="lightbox" id="text7">
-          <div class="box">
-              <a class="close" href="#closing7">x</a>
-              <p class="title">La fonction « WIDTH »</p>
-              <div class="content">
-                  <img src="./src/transition/img/width.png" alt="code de la transition width" />
-              </div>
-          </div>
-      </div>
-
-      <div class="exemple">
-          <a href="#text8" style="text-decoration:none"><h5>Delay</h5></a>
-          <div class="element delay" id="delay"></div>
-      </div>
-
-      <!-- lightbox container hidden with CSS -->
-      <div id="closing8"></div>
-      <div class="lightbox" id="text8">
-          <div class="box">
-              <a class="close" href="#closing8">x</a>
-              <p class="title">La fonction « DELAY »</p>
-              <div class="content">
-                  <img src="./src/transition/img/delay.png" alt="code de la transition delay" />
-              </div>
-          </div>
-      </div>
-
-
-      <div style="background:none;" class="exempleTiming">
-          <p>
-              </br> Transition</br>timing</br>function</p>
-      </div>
-
-      <div class="exempleTiming">
-          <a href="#text9" style="text-decoration:none"><h5>Ease</h5></a>
-          <div class="element img-circle" id="ease"></div>
-      </div>
-      <!-- lightbox container hidden with CSS -->
-      <div id="closing9"></div>
-      <div class="lightbox" id="text9">
-          <div class="box">
-              <a class="close" href="#closing9">x</a>
-              <p class="title">La fonction « EASE »</p>
-              <div class="content">
-                  <img src="./src/transition/img/ease.png" alt="code de la transition ease" />
-              </div>
-          </div>
-      </div>
-
-      <div class="exempleTiming">
-          <a href="#text10" style="text-decoration:none"><h5>Linear</h5></a>
-          <div class="element" id="linear"></div>
-      </div>
-
-      <!-- lightbox container hidden with CSS -->
-      <div id="closing10"></div>
-      <div class="lightbox" id="text10">
-          <div class="box">
-              <a class="close" href="#closing10">x</a>
-              <p class="title">La fonction « LINEAR »</p>
-              <div class="content">
-                  <img src="./src/transition/img/linear.png" alt="code de la transition linear" />
-              </div>
-          </div>
-      </div>
-
-      <div class="exempleTiming">
-          <a href="#text11" style="text-decoration:none"><h5>Step</h5></a>
-          <div class="element img-circle couleurunie" id="step"></div>
-      </div>
-
-      <!-- lightbox container hidden with CSS -->
-      <div id="closing11"></div>
-      <div class="lightbox" id="text11">
-          <div class="box">
-              <a class="close" href="#closing11">x</a>
-              <p class="title">La fonction « STEP »</p>
-              <div class="content">
-                  <img src="./src/transition/img/step.png" alt="code de la transition step" />
-              </div>
-          </div>
-      </div>
+    <div id="title">
+        <div id="title1" class="title-space">
+            <h1>LES</h1></div>
+        <div id="title2" class="title-space">
+            <h1>TRANSITIONS</h1></div>
+        <div id="title3" class="title-space">
+            <h1>EN CSS</h1></div>
     </div>
 
-</div>
+    <div id="regroupe">
+        <div class="content">
+            <div class="nom_transition">
+                <p>Fondu</p>
+            </div>
+            <div class="square" id="fondu"></div>
+            <div class="container">
+
+                <button data-js="open">Voir le code</button>
+            </div>
+            <div class="popup1">
+                <div><pre class="language-css line-numbers"><code>#fondu:hover {
+              transition: all 0.5s ease-out;
+              -webkit-transition: all 0.5s ease-in;
+              -moz-transitions: all 0.5s ease-in;
+          }
+    </code></pre>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content" style="margin-right:0.60%">
+            <div class="nom_transition">
+                <p>Déplacement</p>
+            </div>
+            <div class="square" id="deplacement"></div>
+            <div class="container">
+                <button data-js="ouvrir">Voir le code</button>
+            </div>
+            <div class="popup2">
+                <div><pre class="language-css line-numbers"><code>#deplacement {
+  transition-property: top;
+  -webkit-transition-property: top;
+  transition-duration: .5s;
+  transition-timing-function: ease-out;
+  top: 0;
+  position: relative;
+}
+
+#deplacement:hover {
+  top: 22px;
+}
+</code></pre>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="nom_transition">
+                <p>Rotation</p>
+            </div>
+            <div class="square" id="rotate"></div>
+            <div class="container">
+                <button data-js="tourner">Voir le code</button>
+            </div>
+            <div class="popup3">
+                <div><pre class="language-css line-numbers"><code>#rotate {
+    transition-property: transform, width, height, top;
+    -webkit-transition-property: transform, width, height, top;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+}
+
+#rotate:hover {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    top: 20px;
+}
+</code></pre>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="nom_transition">
+                <p>Zoom</p>
+            </div>
+            <div class="square" id="zoom"></div>
+            <div class="container">
+                <button data-js="zoomer">Voir le code</button>
+            </div>
+            <div class="popup4">
+                <div><pre class="language-css line-numbers"><code><pre class="language-css line-numbers"><code>#zoom {
+    transition-property: transform;
+    -webkit-transition-property: transform;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+}
+
+#zoom:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+</code></pre>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="nom_transition">
+                <p>Déformation</p>
+            </div>
+            <div class="square" id="deformation"></div>
+            <div class="container">
+                <button data-js="deformer">Voir le code</button>
+            </div>
+            <div class="popup5">
+                <div><pre class="language-css line-numbers"><code><pre class="language-css line-numbers"><code>#deformation {
+    transition: transform 0.5s ease-out;
+    -webkit-transition: transform 0.5s ease-out;
+}
+
+#deformation:hover {
+    transform: skew(45deg);
+    -webkit-transform: skew(45deg);
+}
+</code></pre>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="nom_transition">
+                <p>Opacité</p>
+            </div>
+            <div class="square" id="opacity"></div>
+            <div class="container">
+                <button data-js="assombrir">Voir le code</button>
+            </div>
+            <div class="popup6">
+                <div><pre class="language-css line-numbers"><code><pre class="language-css line-numbers"><code>#opacity:hover {
+          opacity: 0.8;
+          transition: all 0.5s ease-out;
+          -webkit-transition: all 0.5s ease-in;
+      }
+    </code></pre>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="nom_transition">
+                <p>Largeur</p>
+            </div>
+            <div class="square" id="width"></div>
+            <div class="container">
+                <button data-js="agrandir">Voir le code</button>
+            </div>
+            <div class="popup7">
+                <div><pre class="language-css line-numbers"><code><pre class="language-css line-numbers"><code>#width {
+        transition: width 0.5s ease-out;
+        -webkit-transition: width 0.5s ease-out;
+    }
+
+    #width:hover {
+        width: 80%;
+    }
+  </code></pre>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="nom_transition">
+                <p>Delay</p>
+            </div>
+            <div class="square" id="delay"></div>
+            <div class="container">
+                <button data-js="attendre">Voir le code</button>
+            </div>
+            <div class="popup8">
+                <div><pre class="language-css line-numbers"><code><pre class="language-css line-numbers"><code>#delay {
+        transition: width 0.6s ease-in 0.4s;
+        -webkit-transition: width 0.6s ease-in 0.4s;
+    }
+
+    #delay:hover {
+        width: 80%;
+    }
+  </code></pre>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="nom_transition">
+                <p>Ease</p>
+            </div>
+            <div class="square" id="ease"></div>
+            <div class="container">
+                <button data-js="easy">Voir le code</button>
+            </div>
+            <div class="popup9">
+                <div><pre class="language-css line-numbers"><code><pre class="language-css line-numbers"><code>#ease {
+        -webkit-transition: all .6s ease-in;
+        -moz-transition: all .6s ease-in;
+        -o-transition: all .6s ease-in;
+        transition: all .6s ease-in;
+    }
+  </code></pre>
+                </div>
+                <!--  -->
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="nom_transition">
+                <p>Linear</p>
+            </div>
+            <div class="square" id="linear"></div>
+            <div class="container">
+                <button data-js="ligne">Voir le code</button>
+            </div>
+            <div class="popup10">
+                <div><pre class="language-css line-numbers"><code><pre class="language-css line-numbers"><code>#linear {
+        transition: background 1s .5s linear;
+    }
+  </code></pre>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="nom_transition">
+                <p>Step</p>
+            </div>
+            <div class="square changementcouleur" id="step"></div>
+            <div class="container">
+                <button data-js="etape">Voir le code</button>
+            </div>
+            <div class="popup11">
+                <div><pre class="language-css line-numbers"><code><pre class="language-css line-numbers"><code>#step {
+        -webkit-transition-timing-function: steps(4, start);
+        -moz-transition-timing-function: steps(4, start);
+        -o-transition-timing-function: steps(4, start);
+        transition-timing-function: steps(4, start);
+    }
+
+    #step:hover {
+        background-color: #7FFFD4;
+    }
+
+    .changementcouleur {
+        -webkit-transition-duration: 5s;
+        -moz-transition-duration: 5s;
+        -o-transition-duration: 5s;
+        transition-duration: 5s;
+        -webkit-transition-property: background-color;
+        -moz-transition-property: background-color;
+        -o-transition-property: background-color;
+        transition-property: background-color;
+    }
+  </code></pre>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <pre class="language-css line-numbers"><code>#fondu:hover {
+          transition: all 0.5s ease-out;
+          -webkit-transition: all 0.5s ease-in;
+          -moz-transitions: all 0.5s ease-in;
+      }
+</code></pre>
+
+    <pre class="language-css line-numbers"><code>#deplacement {
+      transition-property: top;
+      -webkit-transition-property: top;
+      transition-duration: .5s;
+      transition-timing-function: ease-out;
+      top: 0;
+      position: relative;
+  }
+
+  #deplacement:hover {
+      top: 22px;
+  }
+</code></pre>
+
+    <pre class="language-css line-numbers"><code>#rotate {
+      transition-property: transform, width, height, top;
+      -webkit-transition-property: transform, width, height, top;
+      transition-duration: .5s;
+      transition-timing-function: ease-out;
+  }
+
+  #rotate:hover {
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      top: 20px;
+  }
+</code></pre>
+
+    <pre class="language-css line-numbers"><code>#zoom {
+      transition-property: transform;
+      -webkit-transition-property: transform;
+      transition-duration: .5s;
+      transition-timing-function: ease-out;
+  }
+
+  #zoom:hover {
+      transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+  }
+</code></pre>
+
+    <pre class="language-css line-numbers"><code>#deformation {
+      transition: transform 0.5s ease-out;
+      -webkit-transition: transform 0.5s ease-out;
+  }
+
+  #deformation:hover {
+      transform: skew(45deg);
+      -webkit-transform: skew(45deg);
+  }
+</code></pre>
+
+    <pre class="language-css line-numbers"><code>#opacity:hover {
+      opacity: 0.8;
+      transition: all 0.5s ease-out;
+      -webkit-transition: all 0.5s ease-in;
+  }
+</code></pre>
+
+    <pre class="language-css line-numbers"><code>#width {
+      transition: width 0.5s ease-out;
+      -webkit-transition: width 0.5s ease-out;
+  }
+
+  #width:hover {
+      width: 80%;
+  }
+</code></pre>
+
+    <pre class="language-css line-numbers"><code>#delay {
+      transition: width 0.6s ease-in 0.4s;
+      -webkit-transition: width 0.6s ease-in 0.4s;
+  }
+
+  #delay:hover {
+      width: 80%;
+  }
+</code></pre>
+
+    <pre class="language-css line-numbers"><code>#linear {
+      transition: background 1s .5s linear;
+  }
+</code></pre>
+
+    <pre class="language-css line-numbers"><code>#ease {
+      -webkit-transition: all .6s ease-in;
+      -moz-transition: all .6s ease-in;
+      -o-transition: all .6s ease-in;
+      transition: all .6s ease-in;
+  }
+</code></pre>
+
+    <pre class="language-css line-numbers"><code>#step {
+      -webkit-transition-timing-function: steps(4, start);
+      -moz-transition-timing-function: steps(4, start);
+      -o-transition-timing-function: steps(4, start);
+      transition-timing-function: steps(4, start);
+  }
+
+  #step:hover {
+      background-color: #7FFFD4;
+  }
+
+  .changementcouleur {
+      -webkit-transition-duration: 5s;
+      -moz-transition-duration: 5s;
+      -o-transition-duration: 5s;
+      transition-duration: 5s;
+      -webkit-transition-property: background-color;
+      -moz-transition-property: background-color;
+      -o-transition-property: background-color;
+      transition-property: background-color;
+  }
+</code></pre> -->
+
+    <script type="text/javascript" src="./lib/prism/prism.js"></script>
+    <script type="text/javascript" src="./src/transition/popup_transitions.js"></script>
