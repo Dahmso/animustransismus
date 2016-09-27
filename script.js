@@ -159,11 +159,11 @@ function displayContentHeader(elem) {
     contentHeader.style.display = "block";
     contentHeader.style.height = "20vh";
     moon.style.display = "block";
-    contentMountains.style.display = "none";
+    // contentMountains.style.display = "none";
   }
   if (elem === "transition") {
     contentHeader.style.display = "block";
-    moon.style.display = "block";
+    moon.style.display = "none";
     contentMountains.style.display = "block";
     cloudsWrapper.style.display = "none";
   }

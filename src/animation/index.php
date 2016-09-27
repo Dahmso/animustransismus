@@ -6,21 +6,21 @@
   <div class="container ctn-demo">
     <div class="row">
       <div class="col-md-12 text-center">
-      <h1>Survolez les éléments pour visualiser les effets<br>Cliquez sur les titres pour découvrir le code</h1>
       <h2>Animation</h2>
         <div class="colored-line"></div>
         <div class="row ctn-demo">
 
           <div class="col-md-4 text-center">
             <div class="exemple">
-              <a href="#text1"><h3 class="click-btn">Bounce</h3></a>
-              <div class="element img-circle " id="bounce"></div>
+                <h3> class="click-btn">Bounce</h3>
+                <div class="element img-circle " id="bounce"></div>
+                <a href="#text1">Show Code</a>
             </div>
           </div>
           <!-- lightbox container hidden with CSS -->
           <div class="lightbox" id="text1">
             <div class="box">
-              <a class="close" href="#bounce" onclick="ouvrir(this.href); return false">X</a>
+              <a class="close" href="#bounce" onclick="ouvrir(this.href); return false">XShow Code</a>
               <p class="title">Animated bounce</p>
               <div class="bloc">
                 <h2>Syntaxe</h2>
@@ -48,14 +48,15 @@
 
           <div class="col-md-4 text-center">
             <div class="exemple">
-              <a href="#text2"><h3 class="click-btn">Flash</h3></a>
-              <div class="element" id="flash"></div>
+                <h3 class="click-btn">Flash</h3>
+                <div class="element" id="flash"></div>
+                <a href="#text1">Show Code</a>
             </div>
           </div>
           <!-- lightbox container hidden with CSS -->
           <div class="lightbox" id="text2">
             <div class="box">
-              <a class="close"  href="#flash" onclick="ouvrir(this.href); return false">X</a>
+              <a class="close"  href="#flash" onclick="ouvrir(this.href); return false">XShow Code</a>
               <p class="title">Animated flash</p>
               <div class="bloc">
                 <h2>Syntaxe</h2>
@@ -84,14 +85,15 @@
 
           <div class="col-md-4 text-center">
             <div class="exemple">
-              <a href="#text3"><h3 class="click-btn">Pulse</h3></a>
-              <div class="element img-circle uni" id="pulse"></div>
+                <h3 class="click-btn">Pulse</h3>
+                <div class="element img-circle uni" id="pulse"></div>
+                <a href="#text1">Show Code</a>
             </div>
           </div>
           <!-- lightbox container hidden with CSS -->
           <div class="lightbox" id="text3">
             <div class="box">
-              <a class="close"  href="#pulse" onclick="ouvrir(this.href); return false">X</a>
+              <a class="close"  href="#pulse" onclick="ouvrir(this.href); return false">XShow Code</a>
               <p class="title">Animated pulse</p>
               <div class="bloc">
                 <h2>Syntaxe</h2>
@@ -129,14 +131,15 @@
 
           <div class="col-md-4 text-center">
             <div class="exemple">
-              <a href="#text4"><h3 class="click-btn-rb">RubberBand</h3></a>
-              <div class="element" id="rubberBand"></div>
+                <h3 class="click-btn-rb">RubberBand</h3>
+                <div class="element" id="rubberBand"></div>
+                <a href="#text1">Show Code</a>
             </div>
           </div>
           <!-- lightbox container hidden with CSS -->
           <div class="lightbox" id="text4">
             <div class="box">
-              <a class="close"  href="#rubberBand" onclick="ouvrir(this.href); return false">X</a>
+              <a class="close"  href="#rubberBand" onclick="ouvrir(this.href); return false">XShow Code</a>
               <p class="title">Animated rubberBand</p>
               <div class="bloc">
                 <h2>Syntaxe</h2>
@@ -187,14 +190,15 @@
 
           <div class="col-md-4 text-center">
             <div class="exemple">
-              <a href="#text5"><h3 class="click-btn">Shake</h3></a>
-              <div class="element img-circle" id="shake"></div>
+                <h3 class="click-btn">Shake</h3>
+                <div class="element img-circle" id="shake"></div>
+                <a href="#text1">Show Code</a>
             </div>
           </div>
           <!-- lightbox container hidden with CSS -->
           <div class="lightbox" id="text5">
             <div class="box">
-              <a class="close"  href="#shake" onclick="ouvrir(this.href); return false">X</a>
+              <a class="close"  href="#shake" onclick="ouvrir(this.href); return false">XShow Code</a>
               <p class="title">Animated shake</p>
               <div class="bloc">
                 <h2>Syntaxe</h2>
@@ -229,14 +233,15 @@
 
           <div class="col-md-4 text-center">
             <div class="exemple">
-              <a href="#text9"><h3 class="click-btn">Jello</h3></a>
-              <div class="element img-circle" id="jello"></div>
+                <h3 class="click-btn">Jello</h3>
+                <div class="element img-circle" id="jello"></div>
+                <a href="#text1">Show Code</a>
             </div>
           </div>
           <!-- lightbox container hidden with CSS -->
           <div class="lightbox" id="text9">
             <div class="box">
-              <a class="close"  href="#jello" onclick="ouvrir(this.href); return false">X</a>
+              <a class="close"  href="#jello" onclick="ouvrir(this.href); return false">XShow Code</a>
               <p class="title">Animated jello</p>
               <div class="bloc">
                 <h2>Syntaxe</h2>
@@ -296,14 +301,15 @@
 
           <div class="col-md-4 text-center">
             <div class="exemple">
-              <a href="#text7"><h3 class="click-btn">Tada</h3></a>
-              <div class="element" id="tada"></div>
+                <h3 class="click-btn">Tada</h3>
+                <div class="element" id="tada"></div>
+                <a href="#text1">Show Code</a>
             </div>
           </div>
           <!-- lightbox container hidden with CSS -->
           <div class="lightbox" id="text7">
             <div class="box">
-              <a class="close"  href="#tada" onclick="ouvrir(this.href); return false">X</a>
+              <a class="close"  href="#tada" onclick="ouvrir(this.href); return false">XShow Code</a>
               <p class="title">Animated tada</p>
               <div class="bloc">
                 <h2>Syntaxe</h2>
@@ -346,14 +352,15 @@
 
           <div class="col-md-4 text-center">
             <div class="exemple">
-              <a href="#text8"><h3 class="click-btn">Wobble</h3></a>
-              <div class="element" id="wobble"></div>
+                <h3 class="click-btn">Wobble</h3>
+                <div class="element" id="wobble"></div>
+                <a href="#text1">Show Code</a>
             </div>
           </div>
           <!-- lightbox container hidden with CSS -->
           <div class="lightbox" id="text8">
             <div class="box">
-              <a class="close"  href="#wobble" onclick="ouvrir(this.href); return false">X</a>
+              <a class="close"  href="#wobble" onclick="ouvrir(this.href); return false">XShow Code</a>
               <p class="title">Animated wobble</p>
               <div class="bloc">
                 <h2>Syntaxe</h2>
@@ -404,14 +411,15 @@
 
           <div class="col-md-4 text-center">
             <div class="exemple">
-              <a href="#text6"><h3 class="click-btn">Swing</h3></a>
-              <div class="element" id="swing"></div>
+                <h3 class="click-btn">Swing</h3>
+                <div class="element" id="swing"></div>
+                <a href="#text1">Show Code</a>
             </div>
           </div>
           <!-- lightbox container hidden with CSS -->
           <div class="lightbox" id="text6">
             <div class="box">
-              <a class="close"  href="#swing" onclick="ouvrir(this.href); return false">X</a>
+              <a class="close"  href="#swing" onclick="ouvrir(this.href); return false">XShow Code</a>
               <p class="title">Animated swing</p>
               <div class="bloc">
                 <h2>Syntaxe</h2>
