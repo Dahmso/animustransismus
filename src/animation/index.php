@@ -12,7 +12,7 @@
 
           <div class="col-md-4 text-center">
             <div class="exemple">
-                <h3 class="click-btn">Bounce</h3>
+                <h3> class="click-btn">Bounce</h3>
                 <div class="element img-circle " id="bounce"></div>
                 <a href="#text1">Show Code</a>
             </div>

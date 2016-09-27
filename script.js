@@ -163,7 +163,7 @@ function displayContentHeader(elem) {
   }
   if (elem === "transition") {
     contentHeader.style.display = "block";
-    moon.style.display = "block";
+    moon.style.display = "none";
     contentMountains.style.display = "block";
     cloudsWrapper.style.display = "none";
   }
