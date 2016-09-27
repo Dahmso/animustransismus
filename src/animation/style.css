@@ -1,27 +1,46 @@
+.topbar {
+    margin-top: .5em;
+}
 
+.logo {
+    display: none;
+}
+
+.moon {
+    display: block;
+}
+
+.clouds-wrapper {
+    display: block;
+}
+
+.content_mountains {
+    display: block;
+}
+
+.page {
+    width: 100%;
+}
 .ctn-demo {
     margin-top: 80px
 }
 /* test */
 .exemple {
-    background: #E0E0E0;
-    height: 200px;
+    background: whitesmoke;
+    height: 250px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     margin: 15px;
     padding-top: 10px;
+    color: darkgrey;
 }
 .click-btn{
-    border: 1px solid silver;
     width: 90px;
-    margin: 7px auto;
-    border-radius: 5px;
+    margin: auto;
 }
 .click-btn-rb{
-  border: 1px solid silver;
   width: 120px;
   margin: 7px auto;
-  border-radius: 5px;
 }
 .ctn-demo [class^="col-"] {
     margin-bottom: 20px;
@@ -29,16 +48,37 @@
 .element {
     width: 110px;
     height: 110px;
-    background: #CCC;
-    margin: auto;
+    background: #005F6B;
+    margin: 30px auto;
+
 }
 .element:hover {
-    cursor: pointer;
-    background: #31cea9;
+    cursor: crosshair;
+    background: #005F6B;
 }
 .img-circle {
-		border-radius: 50%
+		border-radius: 50%;
+        margin-top: 30px;
 }
+
+.exemple a {
+    color: #005F6B;
+    width: 70px;
+    top: 0px;
+    padding: .5em;
+    border: 1px solid #005F6B;
+    border-radius: 3px;
+}
+
+.exemple a:hover {
+    color: white;
+    width: 70px;
+    top: 0px;
+    padding: .5em;
+    background-color: #005F6B;
+    border-radius: 3px;
+}
+
 .bg-change:hover {
     transition: all 0.5s ease-out;
     -webkit-transition: all 0.5s ease-in;
@@ -141,7 +181,7 @@ a {
 }
 
 .lightbox .box {
-    width: -webkit-min-content;
+    /*width: -webkit-min-content;*/
     width: -moz-min-content;
     width: min-content;
     min-width: 500px;

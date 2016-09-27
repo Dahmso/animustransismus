@@ -4,7 +4,7 @@
 <div class="page">
   
     <div id="part1">
-      <h1>Les <i>effets</i> des transitions en CSS</h1>
+      <h1>Les transitions CSS</h1>
 
       <div class="exemple">
           <a href="#text1" style="text-decoration:none"><h5>Fondu</h5></a>
@@ -142,61 +142,5 @@
           </div>
       </div>
 
-
-      <div style="background:none;" class="exempleTiming">
-          <p>
-              </br> Transition</br>timing</br>function</p>
-      </div>
-
-      <div class="exempleTiming">
-          <a href="#text9" style="text-decoration:none"><h5>Ease</h5></a>
-          <div class="element img-circle" id="ease"></div>
-      </div>
-      <!-- lightbox container hidden with CSS -->
-      <div id="closing9"></div>
-      <div class="lightbox" id="text9">
-          <div class="box">
-              <a class="close" href="#closing9">x</a>
-              <p class="title">La fonction « EASE »</p>
-              <div class="content">
-                  <img src="./src/transition/img/ease.png" alt="code de la transition ease" />
-              </div>
-          </div>
-      </div>
-
-      <div class="exempleTiming">
-          <a href="#text10" style="text-decoration:none"><h5>Linear</h5></a>
-          <div class="element" id="linear"></div>
-      </div>
-
-      <!-- lightbox container hidden with CSS -->
-      <div id="closing10"></div>
-      <div class="lightbox" id="text10">
-          <div class="box">
-              <a class="close" href="#closing10">x</a>
-              <p class="title">La fonction « LINEAR »</p>
-              <div class="content">
-                  <img src="./src/transition/img/linear.png" alt="code de la transition linear" />
-              </div>
-          </div>
-      </div>
-
-      <div class="exempleTiming">
-          <a href="#text11" style="text-decoration:none"><h5>Step</h5></a>
-          <div class="element img-circle couleurunie" id="step"></div>
-      </div>
-
-      <!-- lightbox container hidden with CSS -->
-      <div id="closing11"></div>
-      <div class="lightbox" id="text11">
-          <div class="box">
-              <a class="close" href="#closing11">x</a>
-              <p class="title">La fonction « STEP »</p>
-              <div class="content">
-                  <img src="./src/transition/img/step.png" alt="code de la transition step" />
-              </div>
-          </div>
-      </div>
-    </div>
 
 </div>
