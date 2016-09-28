@@ -258,7 +258,104 @@ setTimeout(function()
 				      }\n\
 				}",
 			html: '<div id="gifinnercircle" class="block"></div>'
-		}];
+		},
+		{
+		text: "Planet",
+		css: ".stars {\n\
+		  position: absolute;\n\
+		  z-index: 2;\n\
+		}\n\
+		.meteor {\n\
+		  animation-name: transimeteor;\n\
+		  animation-duration: 30000ms;\n\
+		  animation-fill-mode: forwards;\n\
+		  animation-timing-function: linear;\n\
+		  animation-iteration-count: infinite;\n\
+		  position: absolute;\n\
+		  z-index: 6;\n\
+		}\n\
+		.meteor img {\n\
+		  width: 10%;\n\
+		}\n\
+		.planet img {\n\
+		  width: 38%;\n\
+		  z-index: 7;\n\
+		}\n\
+		.content {\n\
+		  margin-top: 10%;\n\
+		  position: absolute;\n\
+		  width: 100%;\n\
+		  z-index: 3;\n\
+		}\n\
+		.planet {\n\
+		    text-align: center;\n\
+		}\n\
+		.moon {\n\
+		  left: 48%;\n\
+		  top: 40%;\n\
+		  animation-name: Orbit;\n\
+		  animation-duration: 10000ms;\n\
+		  animation-fill-mode: forwards;\n\
+		  animation-timing-function: linear;\n\
+		  animation-iteration-count: infinite;\n\
+		  position: absolute;\n\
+		  z-index: 30;\n\
+		}\n\
+		.moon img {\n\
+		  animation-name: spacerotation;\n\
+		  animation-duration: 10000ms;\n\
+		  animation-fill-mode: forwards;\n\
+		  animation-timing-function: linear;\n\
+		  animation-iteration-count: infinite;\n\
+		  width: 30%;\n\
+		}\n\
+		.rocket {\n\
+		 margin-left: -5vw;\n\
+		}\n\
+		.rocket img {\n\
+		  animation-name: atterrissage;\n\
+		  animation-duration: 10000ms;\n\
+		  animation-timing-function: linear;\n\
+		  animation-delay: 2s;\n\
+		  animation-iteration-count: infinite;\n\
+		  width: 5%;\n\
+		  z-index: -1;\n\
+		}\n\
+		.flag img {\n\
+		  width: 10%;\n\
+		  position: absolute;\n\
+		  left: 59%;\n\
+		  top: 1%;\n\
+		  visibility: hidden;\n\
+		  animation-name: showflag;\n\
+		  animation-duration: 1s;\n\
+		  animation-delay: 8s;\n\
+		  animation-timing-function: ease;\n\
+		  animation-fill-mode: forwards;\n\
+		  animation-iteration-count: infinite;\n\
+		}",
+		html:  "<div class='stars'>\n\
+	      <img src='src/atelier/stars.png'/>\n\
+	        </div>\n\
+	        <div class='meteor'>\n\
+	          <img src='src/atelier/meteor.png'/>\n\
+	        </div>\n\
+	    <div class='content'>\n\
+	      <div class='flag'>\n\
+	        <img src='src/atelier/flag.png'/>\n\
+	      </div>\n\
+	      <div class='planet'>\n\
+	      <img src='src/atelier/planet.png'/>\n\
+	      </div>\n\
+	      <div class='moon'>\n\
+	        <img src='src/atelier/moon.svg'/>\n\
+	      </div>\n\
+	      <div class='rocket'>\n\
+	        <img src='src/atelier/rocket.png'/>\n\
+	      </div>\n\
+	    </div>"
+      }
+	];
 
 
 	var exercices = new Array();
@@ -269,11 +366,11 @@ setTimeout(function()
 		list.innerHTML += tmp_exercice.getExercice(i);
 		exercices.push(tmp_exercice);
 	};
-	
+
 	var list_section = document.querySelectorAll('#list > section');
 	for (var i = 0; i < list_section.length; i++) {
 		list_section[i].addEventListener('click', function(e)
-		{	
+		{
 			var nb = this.getAttribute('data-nb');
 			var popup = new Popup(exercices[nb]);
 			//console.log(editor_css.getValue());
@@ -302,7 +399,7 @@ setTimeout(function()
 	document.getElementById('btn-css').addEventListener('click', choiceLng);
 
 	document.getElementById('close').addEventListener('click', function(e)
-	{	
+	{
 		var popup = document.getElementById('popup');
 		popup.style.opacity = "0";
 		setTimeout(function() {
