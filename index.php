@@ -48,8 +48,8 @@
 					<p id="mfs">Pressez F11 pour afficher le code en plein ecran</p>
 					<!--<button onclick="verifCss('code_css'); return false">Verification du CSS</button>-->
 				</form>
-				<section>
-					<div class="col-6 resultat">
+				<section style="overflow: inherit; min-height: 500px;">
+					<div class="col-12 resultat">
 						<style id="new_css"></style>
 						<div id="new_html"></div>
 					</div>

@@ -71,8 +71,8 @@ setTimeout(function()
 			this.html = obj_fourniture_exercice.html;
 
 			this.getGif = function(){
-				//return this.directory + this.gifname + this.nb + ".gif"
-				return directory + gifname + "1" + ".gif"
+				return directory + gifname + this.nb + ".gif"
+				//return directory + gifname + "1" + ".gif"
 
 			};
 
