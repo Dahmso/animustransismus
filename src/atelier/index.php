@@ -118,26 +118,7 @@ setTimeout(function()
 					  animation-name:translatex;   /* on annonce le nom animation defini dans le keyframes */\n\
 					}\n\
 					@keyframes translatex {\n\
-					  0% /* etape de l'animation */\n\
-					 {\n\
-					   transform: translateX(0vw);\n\
-					  }\n\
-					  25%\n\
-					 {\n\
-					   transform: translateX(10vw);\n\
-					  }\n\
-					  50%\n\
-					 {\n\
-					   transform: translateX(20vw);\n\
-					  }\n\
-					  75%\n\
-					 {\n\
-					   transform: translateX(10vw);\n\
-					  }\n\
-					  100%\n\
-					 {\n\
-					   transform: translateX(0vw);\n\
-					  }\n\
+					\n\
 					}",
 			html: '<div id="giftranslatex" class="block"></div>'
 		},
@@ -148,26 +129,7 @@ setTimeout(function()
 				  animation-name:translateandrotate;\n\
 				}\n\
 				@keyframes translateandrotate { /* ATTENTON QUAND ON FAIT UNE ANIMATION TOUJOURS SE BASER SUR LA POSITION INITIAL */\n\
-				  0%\n\
-				 {\n\
-				   transform: translateX(0px);\n\
-				  }\n\
-				  25%\n\
-				 {\n\
-				   transform: translateX(120px) rotate(90deg);\n\
-				  }\n\
-				  50%\n\
-				 {\n\
-				   transform: translateX(240px) rotate(180deg); /*il ne fait pas vraiment un 180° à ce moment la, il se base juste de la position initiale malgré la position de l'animation precedente. */\n\
-				  }\n\
-				  75%\n\
-				 {\n\
-				   transform: translateX(120px) rotate(90deg) ;\n\
-				  }\n\
-				  100%\n\
-				 {\n\
-				   transform: translateX(0px); /* n'oublie pas de revenir à votre position initiale pour une animation fluide et ne pas avoir un retour brusque*/\n\
-				  }\n\
+				\n\
 				}",
 			html: '<div id="giftranslatexandrotate" class="block"></div>'
 		},
@@ -178,26 +140,7 @@ setTimeout(function()
 				  animation-name:translateandrotatexy;\n\
 				}\n\
 				@keyframes translateandrotatexy {\n\
-				  0%\n\
-				 {\n\
-				   transform: translateX(0px);\n\
-				  }\n\
-				  25%\n\
-				 {\n\
-				   transform: translateX(120px) translateY(80px) rotate(9\n\0deg);\n\
-				  }\n\
-				  50%\n\
-				 {\n\
-				   transform: translateX(240px)rotate(-180deg); /*leurs montré un graph comment fonctionne rotate et X/Y*/\n\
-				  }\n\
-				  75%\n\
-				 {\n\
-				   transform: translateX(120px) translateY(80px) rotate(90deg);\n\
-				  }\n\
-				  100%\n\
-				 {\n\
-				   transform: translateX(0px);\n\
-				  }\n\
+					\n\
 				}",
 			html: '<div id="giftranslaterotatexy" class="block"></div>'
 		},
@@ -208,34 +151,7 @@ setTimeout(function()
 				  animation-name:translatenewprop;\n\
 				}\n\
 				@keyframes translatenewprop {\n\
-				  0% /* etape de l'animation */\n\
-				 {\n\
-				   transform: translateX(0px);\n\
-				   background-color: rgba(220, 76, 65, 1);\n\
-				  }\n\
-				  25%\n\
-				 {\n\
-				   transform: translateX(120px) scale(1.5) ;\n\
-				   background-color: rgba(220, 76, 65, 1);/* à mettre apres transform, l'animation */\n\
-				   border-radius: 80px;\n\
-				  }\n\
-				  50%\n\
-				 {\n\
-				   transform: translateX(240px) scale(1.1);\n\
-				   background-color: rgba(26, 161, 95, 1);\n\
-				   border-radius: 0px;\n\
-				  }\n\
-				  75%\n\
-				 {\n\
-				   transform: translateX(120px) scale(1.5);\n\
-				   background-color: rgb(255, 206, 69);\n\
-				   border-radius: 80px;\n\
-				  }\n\
-				  100%\n\
-				 {\n\
-				   transform: translateX(0px);\n\
-				   background-color: rgba(220, 76, 65, 1)\n\
-				  }\n\
+				\n\
 				}",
 			html: '<div id="giftranslatenewprop" class="block"></div>'
 		},
@@ -248,14 +164,14 @@ setTimeout(function()
 				  animation-duration: 2s;\n\
 				}\n\
 				@keyframes innercircle {\n\
-				    from /*équivalent à 0% */\n\
-				      {\n\
-				       transform:rotate(0deg);\n\
-				      }\n\
+					from /*équivalent à 0% */\n\
+				    {\n\
+				       \n\
+				    }\n\
 				    to /* équivalent à 100% */\n\
-				      {\n\
-				       transform:rotate(-360deg);\n\
-				      }\n\
+				    {\n\
+				       \n\
+				    }\n\
 				}",
 			html: '<div id="gifinnercircle" class="block"></div>'
 		},
