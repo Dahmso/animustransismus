@@ -226,7 +226,7 @@ setTimeout(function()
 		  width: 30%;\n\
 		}\n\
 		.rocket {\n\
-		 margin-left: -5vw;\n\
+		 margin-left: 0vw;\n\
 		}\n\
 		.rocket img {\n\
 		  animation-name: atterrissage;\n\
