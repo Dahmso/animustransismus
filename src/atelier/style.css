@@ -15,6 +15,11 @@ body {
 .page {
 	width: 100%;
 }
+
+.logo {
+	display: none;
+}
+
 img {
 	width: 80%;
 	height: auto;
