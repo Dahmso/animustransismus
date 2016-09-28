@@ -40,22 +40,26 @@ img {
 
 .content {
 	width: 100%;
+	height: 100%;
 	margin:auto;
-	/*margin-top: 20px;*/
+	position: relative;
 }
 
-.list {
+.texte {
 	width: 60%;
-	text-align: left;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 50px;
 }
 
-span {
-	display: inline-block;
+p {
+	margin: 20px;
+	text-align: center;
 }
 
-a {
-	color: #EB594C
-	display: inline-block;
+.texte a {
+	color: #EB594C;
+	text-decoration: underline;
 }
 
 
