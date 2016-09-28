@@ -3,16 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="304f3e52-3cc3-4bf5-b378-fcbe6670512e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/animation/index.php" afterPath="$PROJECT_DIR$/src/animation/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/animation/style.css" afterPath="$PROJECT_DIR$/src/animation/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/annexe/index.php" afterPath="$PROJECT_DIR$/src/annexe/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/annexe/style.css" afterPath="$PROJECT_DIR$/src/annexe/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/atelier/style.css" afterPath="$PROJECT_DIR$/src/atelier/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/references/images/logo_references.svg" afterPath="$PROJECT_DIR$/src/references/images/logo_references.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/references/index.php" afterPath="$PROJECT_DIR$/src/references/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/references/style.css" afterPath="$PROJECT_DIR$/src/references/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/transition/index.php" afterPath="$PROJECT_DIR$/src/transition/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/transition/style.css" afterPath="$PROJECT_DIR$/src/transition/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/transition/style_transitions.css" afterPath="$PROJECT_DIR$/src/transition/style_transitions.css" />
     </list>
     <ignored path="animustransismus.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/src/references/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="482">
-              <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+              <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -58,7 +51,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="279" column="11" selection-start-line="279" selection-start-column="11" selection-end-line="279" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/animation/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="392">
@@ -91,8 +94,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/references/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+            <state relative-caret-position="210">
+              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -121,7 +124,6 @@
         <option value="$PROJECT_DIR$/head.php" />
         <option value="$PROJECT_DIR$/layout.css" />
         <option value="$PROJECT_DIR$/script.js" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/src/transition/style.css" />
         <option value="$PROJECT_DIR$/src/atelier/style.css" />
         <option value="$PROJECT_DIR$/src/annexe/style.css" />
@@ -129,9 +131,10 @@
         <option value="$PROJECT_DIR$/src/transition/index.php" />
         <option value="$PROJECT_DIR$/src/animation/style.css" />
         <option value="$PROJECT_DIR$/src/transition/style_transitions.css" />
+        <option value="$PROJECT_DIR$/src/animation/index.php" />
         <option value="$PROJECT_DIR$/src/references/index.php" />
         <option value="$PROJECT_DIR$/src/references/style.css" />
-        <option value="$PROJECT_DIR$/src/animation/index.php" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -143,7 +146,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="12" />
+    <option name="x" value="135" />
     <option name="y" value="23" />
     <option name="width" value="1073" />
     <option name="height" value="810" />
@@ -241,15 +244,15 @@
       <updated>1474831509536</updated>
       <workItem from="1474831511594" duration="8011000" />
       <workItem from="1474854955448" duration="19299000" />
-      <workItem from="1474936469632" duration="8181000" />
+      <workItem from="1474936469632" duration="10392000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35491000" />
+    <option name="totallyTimeSpent" value="37702000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="23" width="1073" height="810" extended-state="0" />
+    <frame x="135" y="23" width="1073" height="810" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1878287" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -466,14 +469,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/transition/screen.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -612,10 +607,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/animation/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/references/images/logo_references.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/references/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+        <state relative-caret-position="210">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -623,15 +634,15 @@
     <entry file="file://$PROJECT_DIR$/src/references/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="482">
-          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+          <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/animation/index.php">
+    <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
+        <state relative-caret-position="375">
+          <caret line="279" column="11" selection-start-line="279" selection-start-column="11" selection-end-line="279" selection-end-column="16" />
           <folding />
         </state>
       </provider>
