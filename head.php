@@ -82,8 +82,6 @@
 	<div class="content_header">
 		<div class="moon">
 			<div class="lune">
-				<div class="croissant_lune"></div>
-				<div class="lune_no_visibility"></div>
 			</div>
 		</div>
 		<div class="clouds-wrapper">

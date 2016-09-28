@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.buttonmenu {
+  width: 15%;
+  padding: 20px;
+}
+.buttonmenu a {
+  color: rgb(77, 77, 77);
+}
+.slideon {
+  margin-bottom: 20px;
+}
+.sidebar {
+width: 20%;
+position: fixed;
+height: 100%;
+margin-left: -100%;
+transition: all 0.2s ease-in-out;
+}
+#cible:target {
+  margin-left: 0;
+}
+#cible2:target {
+  margin-left: -100%;
+}
+.button {
+ padding: 20px;
+}
+
+.menutopbar {
+  height: 100%;
+  display: flex;
+  background-color: darkcyan;
+  position: relative;
+}
+.listbar{
+  width: 100%;
+  list-style: none;
+  margin-top: 30%;
+}
+.listbar a {
+  color: white;
+
+}
+.listbar li {
+  text-align: left;
+  list-style: none;
+  margin-bottom: 10%;
+  padding: 15%;
+  padding-left: 0;
+}

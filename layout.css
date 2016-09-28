@@ -211,7 +211,6 @@ code[class*="language-"], pre[class*="language-"] {
 
   .exercice section {
     width: 100%;
-    padding: 15px;
   }
   .exercice .resultat {
     display: inline-block;
@@ -344,24 +343,28 @@ header {
   @keyframes circle {
       from
       {
-        transform:translate(100px,100px);
-        opacity: 1;
+        transform:translate(10vw,-20vh);
+        opacity: 1
       }
       to
       {
-        transform:translate(-2px,-2px);
-        opacity: 0;
+        transform:translate(0,0);
+        opacity: 1;
       }
   }
+
   .lune {
     animation-name: circle;
     animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    animation-delay: 2s;
     border-radius: 50%;
     height: 100px;
-    margin: 0 auto;
+    margin: 2vh auto;
     width: 100px;
+    opacity: 0;
+    background-color: lightgrey;
     -webkit-box-shadow: inset -10px 1px 5px 0px #656565;
     -o-box-shadow: inset -10px 1px 5px 0px #656565;
     box-shadow: inset -10px 1px 5px 0px #656565;
@@ -374,21 +377,6 @@ header {
 
 }
 
-  .croissant_lune {
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    background-color: darkcyan;
-    z-index: -1;
-  }
-
-  .lune_no_visibility {
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    background-color: white;
-    margin-left: -77px;
-  }
 
   header .clouds-wrapper {
     position: absolute;

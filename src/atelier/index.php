@@ -291,8 +291,8 @@ setTimeout(function()
 		    text-align: center;\n\
 		}\n\
 		.moon {\n\
-		  left: 48%;\n\
-		  top: 40%;\n\
+		  left: 43%;\n\
+		  top: 27%;\n\
 		  animation-name: Orbit;\n\
 		  animation-duration: 10000ms;\n\
 		  animation-fill-mode: forwards;\n\

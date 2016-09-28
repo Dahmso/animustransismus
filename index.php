@@ -51,7 +51,7 @@
 				<section style="overflow: inherit; min-height: 500px;">
 					<div class="col-12 resultat">
 						<style id="new_css"></style>
-						<div id="new_html"></div>
+						<div id="new_html" style='width: 100vw'></div>
 					</div>
 				</section>
 			</div>

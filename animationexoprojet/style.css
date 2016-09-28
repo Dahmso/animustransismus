@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.stars {
+  position: absolute;
+  z-index: 2;
+}
+.meteor {
+  animation-name: transimeteor;
+  animation-duration: 30000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  position: absolute;
+  z-index: 6;
+}
+.meteor img {
+  width: 10%;
+}
+.planet img {
+  width: 38%;
+  z-index: 7;
+}
+.content {
+  margin-top: 10%;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+.planet {
+    text-align: center;
+}
+.moon {
+  left: 48%;
+  top: 40%;
+  animation-name: Orbit;
+  animation-duration: 10000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  position: absolute;
+  z-index: 30;
+}
+.moon img {
+  animation-name: spacerotation;
+  animation-duration: 10000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  width: 30%;
+}
+.rocket {
+ margin-left: -5vw;
+}
+.rocket img {
+  animation-name: atterrissage;
+  animation-duration: 10000ms;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  width: 5%;
+  z-index: -1;
+}
+
+.flag img {
+  width: 10%;
+  position: absolute;
+  left: 59%;
+  top: 1%;
+  visibility: hidden;
+  animation-name: showflag;
+  animation-duration: 1s;
+  animation-delay: 8s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes showflag {
+  0%
+  {
+    visibility: visible;
+  }
+  100%
+  {
+    visibility: hidden;
+  }
+
+}
+@keyframes atterrissage {
+  0%
+  {
+    transform: translate(0, 0) rotate(-40deg);
+  }
+  20%
+  {
+    transform: translate(35vw, -75vh) rotate(-40deg);
+  }
+  40%
+  {
+    transform: translate(35vw, -75vh) rotate(-125deg);
+  }
+  60%
+  {
+    transform: translate(40vw, -72vh) rotate(-125deg);
+  }
+  90%
+  {
+    transform:  translate(20vw, -82vh) rotate(-125deg);
+  }
+  100%
+  {
+      transform: translate(10vw, -92vh) rotate(-125deg);
+  }
+}
+@keyframes decollage {
+
+  0%
+  {
+      transform: translate(0px, -20vh) rotate(0deg);
+  }
+  20%
+  {
+      transform: translate(90vw, -20vh) rotate(0deg);
+  }
+  30%
+  {
+      transform: translate(90vw, -85vh) rotate(-90deg);
+  }
+  40%
+  {
+      transform: translate(70vw, -85vh) rotate(-180deg);
+  }
+  50%
+  {
+      transform: translate(50vw, -85vh) rotate(-180deg);
+  }
+  60%
+  {
+      transform: translate(40vw, -85vh) rotate(-180deg);
+  }
+  70%
+  {
+      transform: translate(20vw, -85vh) rotate(-180deg);
+  }
+  80%
+  {
+      transform: translate(0vw,-30vh) rotate(-270deg);
+  }
+  90%
+  {
+      transform: translate(0vw, -10vh) rotate(-270deg);
+  }
+  100%
+  {
+      transform: translate(0, 0) rotate(-270deg);
+  }
+}
+@keyframes Orbit {
+    from
+    {
+      -webkit-transform: rotate(0deg) translateX(-30vw) rotate(0deg);
+    }
+    to
+    {
+      -webkit-transform: rotate(-360deg) translateX(-30vw) rotate(360deg);
+    }
+  }
+@keyframes transimeteor {
+  0%
+  {
+    transform: translate(0,0);
+  }
+  25%
+  {
+    transform: translate(25vw, 25vh);
+  }
+  50%
+  {
+    transform: translate(50vw, 50vh);
+  }
+  75%
+  {
+    transform: translate(75vw, 75vh);
+  }
+  100%
+  {
+    transform: translate(100vw, 100vh);
+  }
+
+}
