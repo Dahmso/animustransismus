@@ -28,8 +28,6 @@
 .exemple {
     background: whitesmoke;
     height: 250px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
     margin: 15px;
     padding-top: 10px;
     color: darkgrey;
@@ -137,7 +135,7 @@
 		background: #2c2664;
 }
 .colored-line {
-    margin: 30px auto
+    margin: 20px auto
 }
 h1 {
     font-family: 'Quattrocento Sans', sans-serif;

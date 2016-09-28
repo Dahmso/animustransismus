@@ -39,74 +39,24 @@ img {
 }
 
 .content {
-	width: 60%;
+	width: 100%;
 	margin:auto;
 	/*margin-top: 20px;*/
 }
 
-
-.animatable {
-	background: url('images/animatable.svg') center no-repeat;
-}
-
-.envato {
-	background: url('images/envato.png') center no-repeat;
-}
-
-.solar_system {
-	background: url('images/solar_system.png') center no-repeat;
-}
-
-.border {
-	background: url('images/border.svg') center no-repeat;
-}
-
-.rachel_cope {
-	background: url('images/robots.png') center no-repeat;
-}
-
-.cubic_bezier {
-	background: url('images/cubic_bezier.svg') center no-repeat;
-}
-
-.content_card {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	height: 300px;
-	padding-top: .5em;
-}
-
-.card_maxi {
+.list {
 	width: 60%;
-	height: 100%;
-	background-color: white;
+	text-align: left;
 }
 
-.card_mini {
-	width: 39%;
-	height: 100%;
-	background-color: white;
+span {
+	display: inline-block;
 }
 
-.card_bg {
-	height:50%;
+a {
+	color: #EB594C
+	display: inline-block;
 }
 
-.card_title {
-	height:25%;
-}
 
-.card_btn {
-	height: 25%;
-}
-
-.card_btn a {
-	color: white;
-	background-color: #EB594C;
-	border-radius: 3px;
-
-	width: 5em;
-}
 

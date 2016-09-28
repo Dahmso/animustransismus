@@ -2,7 +2,6 @@
 
 
 <div class="page">
-	<h1>Propriétés et conclusions</h1>
 	<div class="row">
 		<h1>Transition</h1>
 		<p>
