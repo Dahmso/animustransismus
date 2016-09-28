@@ -156,26 +156,6 @@ setTimeout(function()
 			html: '<div id="giftranslatenewprop" class="block"></div>'
 		},
 		{
-			text: "Animation sur plusieurs Div",
-			css: bloc_css + "\n\
-				#gifinnercircle {\n\
-				  animation-name:innercircle;\n\
-				  border-radius: 80px;\n\
-				  animation-duration: 2s;\n\
-				}\n\
-				@keyframes innercircle {\n\
-					from /*équivalent à 0% */\n\
-				    {\n\
-				       \n\
-				    }\n\
-				    to /* équivalent à 100% */\n\
-				    {\n\
-				       \n\
-				    }\n\
-				}",
-			html: '<div id="gifinnercircle" class="block"></div>'
-		},
-		{
 		text: "Planet",
 		css: ".stars {\n\
 		  position: absolute;\n\
