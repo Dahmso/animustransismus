@@ -11,10 +11,21 @@
     transition: all 0.5s linear;
 }
 
+.page {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+}
+
 body {
 	font-family: 'Lato', sans-serif;
 	margin: 0px;
 	position: relative;
+}
+
+.logo {
+    display: none;
 }
 
 ::selection {
@@ -26,13 +37,6 @@ body {
 	padding: 30px 15px;
 	max-width: 700px;
 }
-.page h1{
-	color : #00998B;
-}
-.page h2 {}
-.page p {}
-
-
 
 .row {
   margin: 100px 25px;
