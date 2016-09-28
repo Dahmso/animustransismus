@@ -42,7 +42,6 @@ section {
 	background: white;
 	padding: 15px 0px;
 	transition: all 0.3s ease-out;
-	overflow: hidden;
 	text-shadow: 0 0 0.1px #636363;
 	cursor: hand;
 	border-top: 1px solid #b3d1ff;

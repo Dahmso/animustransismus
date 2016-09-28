@@ -28,9 +28,6 @@
 		editor_html.setOptions({
 		    // "scrollPastEnd": 0.8,
 		    autoScrollEditorIntoView: true,
-		    enableBasicAutocompletion: true,
-	        enableSnippets: true,
-	        enableLiveAutocompletion: true,
 	        tabSize: 1,
 	    	useSoftTabs: true
 	        //wrap: 75
